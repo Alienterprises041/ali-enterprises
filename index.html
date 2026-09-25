@@ -3,246 +3,312 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ali Enterprises | Pakistan Import Export & Global Sourcing Since 2016</title>
-<meta name="description" content="Ali Enterprises - FBR registered Pakistani import export and global sourcing company since 2016. Textiles, packaging, paper & board, industrial products and consumer goods.">
+<meta name="theme-color" content="#071a33">
+<title>Ali Enterprises | Pakistan Import Export & Global Sourcing</title>
+<meta name="description" content="Ali Enterprises — Pakistan import, export and global sourcing partner. Textiles, packaging, paper & board, industrial products, consumer goods and custom sourcing.">
+<meta name="keywords" content="Pakistan exporter, Pakistan import export, global sourcing Pakistan, textiles exporter, packaging Pakistan, paper board exporter">
+<meta property="og:title" content="Ali Enterprises | Pakistan Import Export & Global Sourcing">
+<meta property="og:description" content="Reliable sourcing, competitive pricing and end-to-end international trade support from Pakistan.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.6; }
-
-  nav {
-    background: #1a3c6e; padding: 15px 20px; position: sticky; top: 0; z-index: 100;
-    display: flex; justify-content: space-between; align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-  }
-  nav .logo { color: #fff; font-size: 20px; font-weight: bold; }
-  nav ul { list-style: none; display: flex; gap: 25px; }
-  nav ul li a { color: #fff; text-decoration: none; font-size: 15px; transition: 0.2s; }
-  nav ul li a:hover { color: #28a745; }
-
-  .hero {
-    background: linear-gradient(135deg, #1a3c6e 0%, #28a745 100%);
-    color: #fff; text-align: center; padding: 80px 20px;
-  }
-  .hero h1 { font-size: 42px; margin-bottom: 15px; }
-  .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 25px; }
-  .hero .badge {
-    display: inline-block; background: rgba(255,255,255,0.2);
-    padding: 6px 16px; border-radius: 20px; margin: 5px; font-size: 14px;
-  }
-  .hero .stats {
-    display: flex; flex-wrap: wrap; justify-content: center;
-    gap: 40px; margin-top: 40px;
-  }
-  .hero .stat h3 { font-size: 34px; }
-  .hero .stat p { font-size: 14px; opacity: 0.9; }
-
-  section { padding: 60px 20px; }
-  .container { max-width: 1100px; margin: 0 auto; }
-  h2 { text-align: center; font-size: 32px; color: #1a3c6e; margin-bottom: 10px; }
-  .sub { text-align: center; color: #666; margin-bottom: 40px; }
-
-  .grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-  .card {
-    flex: 1 1 300px; background: #fff; border-radius: 10px; padding: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 4px solid #1a3c6e;
-    transition: transform 0.2s;
-  }
-  .card:hover { transform: translateY(-5px); }
-  .card h3 { color: #1a3c6e; margin-bottom: 10px; }
-  .card p { color: #555; }
-  .card a { color: #28a745; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
-
-  .cred { background: #f8f9fa; }
-  .process { background: #fff; }
-  .process-steps { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-  .step {
-    flex: 1 1 160px; background: #f8f9fa; border-radius: 10px;
-    padding: 20px; text-align: center; border-left: 4px solid #28a745;
-  }
-  .step .num {
-    display: inline-block; background: #1a3c6e; color: #fff;
-    width: 34px; height: 34px; line-height: 34px; border-radius: 50%;
-    font-weight: bold; margin-bottom: 10px;
-  }
-  .step h4 { color: #1a3c6e; margin-bottom: 6px; font-size: 15px; }
-  .step p { font-size: 13px; color: #666; }
-
-  .cert-section { background: #f8f9fa; text-align: center; }
-  .cert-section img {
-    max-width: 100%; width: 600px; border-radius: 10px;
-    border: 1px solid #e0e0e0; box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-    margin-top: 20px;
-  }
-
-  .offices { background: #fff; }
-  .office-card { border-top: 4px solid #1a3c6e; }
-  .office-card.green { border-top-color: #28a745; }
-  .office-card.gold { border-top-color: #ffc107; }
-
-  .contact-box {
-    text-align: center; margin-top: 40px; padding: 25px;
-    background: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  .contact-box .phone { font-size: 22px; font-weight: bold; color: #28a745; }
-
-  .about-text {
-    max-width: 800px; margin: 0 auto; text-align: center; color: #555;
-  }
-  .about-text ul { list-style: none; margin-top: 20px; text-align: left; display: inline-block; }
-  .about-text ul li { margin: 8px 0; }
-  .about-text ul li::before { content: "✓ "; color: #28a745; font-weight: bold; }
-
-  footer { background: #1a3c6e; color: #fff; text-align: center; padding: 30px 20px; }
-  footer p { font-size: 14px; opacity: 0.9; margin: 5px 0; }
-  footer a { color: #28a745; text-decoration: none; }
-
-  @media (max-width: 768px) {
-    nav { flex-direction: column; gap: 10px; }
-    nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
-    .hero h1 { font-size: 30px; }
-    .hero .stats { gap: 25px; }
-  }
+:root{
+  --navy:#071a33; --navy2:#0d2a50; --gold:#c9a45b; --gold2:#e5c987;
+  --ivory:#f7f5ef; --white:#fff; --ink:#162235; --muted:#687386;
+  --line:#e6e8ed; --shadow:0 18px 50px rgba(7,26,51,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(7,26,51,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(229,201,135,.18)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;letter-spacing:.02em}
+.mark{width:40px;height:40px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold2);font-weight:900;font-size:19px}
+.brand small{display:block;color:#b9c4d4;font-size:9px;letter-spacing:.18em;font-weight:600}
+nav{display:flex;gap:22px;align-items:center}
+nav a{color:#e8edf5;font-size:14px}
+nav a:hover{color:var(--gold2)}
+.nav-cta{padding:10px 16px;border:1px solid var(--gold);border-radius:999px;color:var(--gold2)!important}
+.hero{background:
+ radial-gradient(circle at 80% 15%,rgba(201,164,91,.18),transparent 30%),
+ linear-gradient(135deg,var(--navy),#102f58 65%,#071a33);
+color:#fff;padding:92px 0 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.kicker{color:var(--gold2);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:16px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.03;letter-spacing:-.045em;margin-bottom:22px}
+.hero p{color:#d5deea;font-size:18px;max-width:650px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;font-weight:750;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#071a33}
+.btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
+.hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(229,201,135,.25);padding:28px;border-radius:22px;box-shadow:var(--shadow)}
+.hero-card .big{font-size:42px;font-weight:850;color:var(--gold2)}
+.hero-card p{font-size:14px;margin-top:3px}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.14);margin-top:22px}
+.stat{background:rgba(7,26,51,.55);padding:18px}
+.stat strong{display:block;font-size:25px;color:#fff}
+.stat span{font-size:11px;color:#b9c4d4}
+section{padding:82px 0}
+.section-head{max-width:720px;margin-bottom:38px}
+.section-head .kicker{color:#9a783b}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-.035em;color:var(--navy);margin-bottom:12px}
+.lead{color:var(--muted);font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff;box-shadow:0 8px 30px rgba(7,26,51,.05)}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);transition:.2s}
+.icon{width:44px;height:44px;border-radius:12px;background:#f2ead9;color:#8a6a32;display:grid;place-items:center;font-weight:900;margin-bottom:18px}
+.card h3{font-size:19px;color:var(--navy);margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px}
+.card a{display:inline-block;margin-top:16px;color:#8a6a32;font-weight:750;font-size:13px}
+.alt{background:var(--ivory)}
+.markets{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.market{padding:24px 16px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:16px}
+.market strong{display:block;color:var(--navy);margin-top:8px;font-size:14px}
+.credentials{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.credential{border:1px solid var(--line);border-radius:20px;padding:28px;background:#fff}
+.credential strong{color:var(--navy);font-size:20px;display:block;margin-bottom:5px}
+.credential span{color:var(--muted);font-size:14px}
+.certificate-wrap{margin-top:30px;padding:18px;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.certificate-wrap img{display:block;width:100%;height:auto;border-radius:10px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{position:relative;border-top:3px solid var(--gold);padding:20px;background:#fff;border-radius:0 0 16px 16px}
+.step b{font-size:12px;color:#9a783b;letter-spacing:.12em}
+.step h3{color:var(--navy);margin:7px 0}
+.step p{color:var(--muted);font-size:14px}
+.rfq{display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:start}
+.panel{background:var(--navy);color:#fff;padding:32px;border-radius:22px}
+.panel h2{color:#fff}
+.panel p{color:#c9d3df}
+.contact-list{margin-top:24px;display:grid;gap:13px}
+.contact-list div{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14px}
+.form{border:1px solid var(--line);border-radius:22px;padding:30px;background:#fff;box-shadow:var(--shadow)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:6px}
+.field.full{grid-column:1/-1}
+label{font-size:12px;font-weight:750;color:#334155}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d9dee7;border-radius:10px;font:inherit;color:var(--ink);background:#fff}
+textarea{min-height:120px;resize:vertical}
+.form-note{font-size:12px;color:var(--muted);margin:12px 0 18px}
+.payment{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.payment-box{border:1px solid var(--line);border-radius:20px;padding:26px;background:#fff}
+.payment-box h3{color:var(--navy);margin-bottom:9px}
+.notice{background:#f7f1e4;border-left:4px solid var(--gold);padding:14px 16px;border-radius:8px;color:#5d4b2c;font-size:13px}
+footer{background:#061426;color:#aeb9c8;padding:45px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}
+footer h3{color:#fff;margin-bottom:10px}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:18px;font-size:12px}
+.wa{position:fixed;right:18px;bottom:18px;background:#18a56b;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.18);z-index:40}
+.mobile-menu{display:none}
+@media(max-width:850px){
+ nav{display:none}.mobile-menu{display:block;color:#fff;border:1px solid rgba(255,255,255,.25);padding:8px 11px;border-radius:8px}
+ .hero-grid,.rfq,.credentials,.payment{grid-template-columns:1fr}
+ .cards,.steps{grid-template-columns:1fr 1fr}.markets{grid-template-columns:repeat(2,1fr)}
+ .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+ section{padding:62px 0}.hero{padding:70px 0 55px}.hero-grid{gap:30px}
+ .cards,.steps,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}
+ h1{font-size:44px}.hero p{font-size:16px}.brand span{font-size:15px}
+ .stat-grid{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="logo">Ali Enterprises</div>
-  <ul>
-    <li><a href="#categories">Categories</a></li>
-    <li><a href="#credentials">Credentials</a></li>
-    <li><a href="#offices">Offices</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<div class="hero">
-  <h1>Connecting Pakistan with Global Markets</h1>
-  <p>Reliable sourcing, competitive pricing, and end-to-end trade support — from Faisalabad to buyers and suppliers across the world.</p>
-  <div>
-    <span class="badge">Import</span>
-    <span class="badge">Export</span>
-    <span class="badge">Global Sourcing</span>
-    <span class="badge">Logistics Coordination</span>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <span class="mark">A</span>
+      <span>ALI ENTERPRISES<small>IMPORT • EXPORT • GLOBAL SOURCING</small></span>
+    </a>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#markets">Markets</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#rfq">Request a Quote</a>
+    </nav>
+    <a class="mobile-menu" href="#rfq">RFQ</a>
   </div>
-  <div class="stats">
-    <div class="stat"><h3>2016</h3><p>FBR Registered Since</p></div>
-    <div class="stat"><h3>9+</h3><p>Years in Business</p></div>
-    <div class="stat"><h3>6+</h3><p>Product Categories</p></div>
-    <div class="stat"><h3>5</h3><p>Markets Served</p></div>
-  </div>
-</div>
+</header>
 
-<section id="categories">
-  <div class="container">
-    <h2>What We Trade</h2>
-    <p class="sub">Trading Categories</p>
-    <div class="grid">
-      <div class="card"><h3>Textiles</h3><p>Fabric, garments, home textiles and made-ups sourced from Pakistan's established textile hub.</p><a href="#contact">Enquire →</a></div>
-      <div class="card"><h3>Packaging Materials</h3><p>Corrugated boxes, flexible packaging, labels and industrial packaging solutions.</p><a href="#contact">Enquire →</a></div>
-      <div class="card"><h3>Paper & Board</h3><p>Kraft paper, duplex board, tissue and printing & writing paper for bulk buyers.</p><a href="#contact">Enquire →</a></div>
-      <div class="card"><h3>Industrial Products</h3><p>Industrial raw materials, components and consumables for manufacturing sectors.</p><a href="#contact">Enquire →</a></div>
-      <div class="card"><h3>Consumer Goods</h3><p>FMCG, household items and general merchandise for wholesale and retail buyers.</p><a href="#contact">Enquire →</a></div>
-      <div class="card"><h3>Custom Sourcing</h3><p>Have a specific product requirement? We source on request and manage the full supply chain.</p><a href="#contact">Enquire →</a></div>
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Pakistan • Since 2016</div>
+      <h1>Connecting Pakistan with Global Markets.</h1>
+      <p>Reliable sourcing, competitive pricing and end-to-end trade support for international buyers and suppliers.</p>
+      <div class="buttons">
+        <a class="btn btn-gold" href="#rfq">Request a Quote</a>
+        <a class="btn btn-outline" href="#products">Explore Products</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="kicker">Trade Partner</div>
+      <div class="big">9+ Years</div>
+      <p>of Pakistan-based trading and sourcing experience.</p>
+      <div class="stat-grid">
+        <div class="stat"><strong>6+</strong><span>Product Categories</span></div>
+        <div class="stat"><strong>5</strong><span>Market Regions</span></div>
+        <div class="stat"><strong>FBR</strong><span>Registered Business</span></div>
+        <div class="stat"><strong>PSW</strong><span>Export Training</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="cred">
-  <div class="container">
-    <h2>Markets We Serve</h2>
-    <p class="sub">Global Reach</p>
-    <div class="grid">
-      <div class="card" style="text-align:center;">🕌<h3>Middle East</h3></div>
-      <div class="card" style="text-align:center;">🏛️<h3>Europe</h3></div>
-      <div class="card" style="text-align:center;">🌏<h3>Asia</h3></div>
-      <div class="card" style="text-align:center;">🌍<h3>Africa</h3></div>
-      <div class="card" style="text-align:center;">🌎<h3>North America</h3></div>
-    </div>
+<section id="products">
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">What We Trade</div><h2>Products & sourcing</h2>
+    <p class="lead">From established Pakistani supply chains to custom sourcing requirements, we coordinate the commercial and logistics process around your specification.</p>
   </div>
+  <div class="cards">
+    <article class="card"><div class="icon">TX</div><h3>Textiles</h3><p>Fabric, garments, home textiles and made-ups sourced from Pakistan's textile hub.</p><a href="#rfq">Enquire →</a></article>
+    <article class="card"><div class="icon">PK</div><h3>Packaging Materials</h3><p>Corrugated boxes, flexible packaging, labels and industrial packaging solutions.</p><a href="#rfq">Enquire →</a></article>
+    <article class="card"><div class="icon">PB</div><h3>Paper & Board</h3><p>Kraft paper, duplex board, tissue and printing & writing paper for bulk buyers.</p><a href="#rfq">Enquire →</a></article>
+    <article class="card"><div class="icon">IN</div><h3>Industrial Products</h3><p>Industrial raw materials, components and consumables for manufacturing sectors.</p><a href="#rfq">Enquire →</a></article>
+    <article class="card"><div class="icon">CG</div><h3>Consumer Goods</h3><p>FMCG, household items and general merchandise for wholesale and retail buyers.</p><a href="#rfq">Enquire →</a></article>
+    <article class="card"><div class="icon">CS</div><h3>Custom Sourcing</h3><p>Have a specific product requirement? We source on request and coordinate the supply chain.</p><a href="#rfq">Start an RFQ →</a></article>
+  </div>
+</div>
+</section>
+
+<section id="markets" class="alt">
+<div class="container">
+  <div class="section-head"><div class="kicker">Global Reach</div><h2>Markets we serve</h2><p class="lead">Built for cross-border trade, documentation and buyer communication.</p></div>
+  <div class="markets">
+    <div class="market">🌐<strong>Middle East</strong></div>
+    <div class="market">🏛️<strong>Europe</strong></div>
+    <div class="market">🌏<strong>Asia</strong></div>
+    <div class="market">🌍<strong>Africa</strong></div>
+    <div class="market">🌎<strong>North America</strong></div>
+  </div>
+</div>
 </section>
 
 <section id="credentials">
-  <div class="container">
-    <h2>Company Credentials</h2>
-    <p class="sub">Registered Business</p>
-    <div class="grid">
-      <div class="card"><h3>🏛️ FBR Registered</h3><p>Oct 2016 — 9+ years in business<br>NTN: 7306837-7 | RTO Faisalabad</p></div>
-      <div class="card"><h3>🏢 FCCI Member</h3><p>Membership # 2120020-16812<br>Since Dec 2024</p></div>
-    </div>
+<div class="container">
+  <div class="section-head"><div class="kicker">Trust & Credentials</div><h2>Verified business information</h2></div>
+  <div class="credentials">
+    <div class="credential"><strong>FBR Registered</strong><span>Established October 2016 · NTN 7306837-7 · RTO Faisalabad</span></div>
+    <div class="credential"><strong>FCCI Member</strong><span>Membership # 2120020-16812 · Since December 2024</span></div>
   </div>
+  <div class="certificate-wrap">
+    <div class="section-head" style="margin-bottom:20px"><div class="kicker">Certified Export Expertise</div><h2 style="font-size:30px">Pakistan export training</h2><p class="lead">Certificate of Accomplishment issued by Pakistan Single Window (PSW) through ilmX.</p></div>
+    <img src="certificate.png" alt="PSW Certificate of Accomplishment - Ali Ahsan" loading="eager">
+  </div>
+</div>
 </section>
 
-<section class="cert-section">
-  <div class="container">
-    <h2>Certified Export Expertise</h2>
-    <p class="sub">Our team is certified in Pakistan's Export Landscape by Pakistan Single Window (PSW) through ilmX.</p>
-    <img src="certificate.png" alt="PSW Certificate of Accomplishment - Ali Ahsan">
+<section class="alt">
+<div class="container">
+  <div class="section-head"><div class="kicker">How We Work</div><h2>From inquiry to delivery</h2></div>
+  <div class="steps">
+    <div class="step"><b>01</b><h3>Inquiry</h3><p>Share product, quantity, destination and specifications.</p></div>
+    <div class="step"><b>02</b><h3>Quotation</h3><p>Receive pricing with applicable Incoterms and commercial terms.</p></div>
+    <div class="step"><b>03</b><h3>Sampling</h3><p>Samples can be arranged for quality verification when required.</p></div>
+    <div class="step"><b>04</b><h3>Order</h3><p>Order confirmation with agreed payment and delivery terms.</p></div>
+    <div class="step"><b>05</b><h3>QC & Shipping</h3><p>Quality checks, documentation and shipment coordination.</p></div>
+    <div class="step"><b>06</b><h3>Delivery</h3><p>Delivery confirmation and after-sales communication.</p></div>
   </div>
+</div>
 </section>
 
-<section class="process">
-  <div class="container">
-    <h2>How We Work</h2>
-    <p class="sub">Our Process</p>
-    <div class="process-steps">
-      <div class="step"><div class="num">1</div><h4>Inquiry</h4><p>Send us your RFQ with product, quantity and destination.</p></div>
-      <div class="step"><div class="num">2</div><h4>Quotation</h4><p>We share a detailed quotation with pricing and Incoterms.</p></div>
-      <div class="step"><div class="num">3</div><h4>Sampling</h4><p>Samples arranged on request for quality verification.</p></div>
-      <div class="step"><div class="num">4</div><h4>Order</h4><p>Order confirmed with agreed payment terms.</p></div>
-      <div class="step"><div class="num">5</div><h4>QC & Shipping</h4><p>Quality check, documentation and shipment coordination.</p></div>
-      <div class="step"><div class="num">6</div><h4>Delivery</h4><p>Delivery confirmation and after-sales support.</p></div>
+<section id="payment">
+<div class="container">
+  <div class="section-head"><div class="kicker">Secure Commercial Payments</div><h2>Bank transfer & payment information</h2><p class="lead">International buyers can request official bank payment instructions with the quotation or proforma invoice.</p></div>
+  <div class="payment">
+    <div class="payment-box">
+      <h3>International Bank Transfer</h3>
+      <p class="lead">For security, bank details are issued directly on the official quotation/proforma invoice for the confirmed transaction.</p>
+      <div class="notice" style="margin-top:18px">Do not send funds to any bank account received through an unofficial message. Verify the account details against the latest official proforma invoice.</div>
+    </div>
+    <div class="payment-box">
+      <h3>Payment Confirmation</h3>
+      <p class="lead">After payment, send the transaction reference and proof through the contact/RFQ channel so the order can be reconciled.</p>
+      <a class="btn btn-gold" style="margin-top:18px" href="#rfq">Send Payment Reference</a>
     </div>
   </div>
+</div>
 </section>
 
-<section id="offices" class="offices">
-  <div class="container">
-    <h2>Visit Us</h2>
-    <p class="sub">Our Office Locations</p>
-    <div class="grid">
-      <div class="card office-card"><h3>🏢 Head Office</h3><p>Port Qasim,<br>Karachi, Pakistan</p></div>
-      <div class="card office-card green"><h3>🏬 Branch Office</h3><p>St # 3, Aminpur Bazar,<br>Faisalabad, Pakistan</p></div>
-      <div class="card office-card gold"><h3>🏢 Office</h3><p>Bahria Orchard,<br>Lahore, Pakistan</p></div>
-    </div>
-
-    <div class="contact-box" id="contact">
-      <p style="font-size:18px; color:#1a3c6e; margin-bottom:8px;">📞 Phone / WhatsApp</p>
-      <p class="phone">+92 336 6666967</p>
-      <p style="margin-top:15px; color:#666;">🏛️ FBR / FCCI — NTN: 7306837-7 | FCCI: 2120020-16812</p>
-      <p style="margin-top:15px;">
-        <a href="https://wa.me/923366666967" style="background:#28a745; color:#fff; padding:12px 30px; border-radius:25px; text-decoration:none; font-weight:bold; display:inline-block;">Send RFQ on WhatsApp</a>
-      </p>
+<section id="rfq">
+<div class="container rfq">
+  <div class="panel">
+    <div class="kicker">International Buyers</div>
+    <h2>Request a quotation.</h2>
+    <p>Tell us what you need and where it needs to go. Our team can respond with sourcing options, pricing and applicable trade terms.</p>
+    <div class="contact-list">
+      <div><strong>Phone / WhatsApp</strong><br>+92 336 6666967</div>
+      <div><strong>Head Office</strong><br>Port Qasim, Karachi, Pakistan</div>
+      <div><strong>Branch</strong><br>Aminpur Bazar, Faisalabad, Pakistan</div>
+      <div><strong>Incoterms</strong><br>FOB · CIF · CFR · EXW</div>
     </div>
   </div>
+
+  <form class="form" name="international-rfq" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
+    <input type="hidden" name="form-name" value="international-rfq">
+    <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+    <div class="form-grid">
+      <div class="field"><label>Full name *</label><input name="name" required></div>
+      <div class="field"><label>Company *</label><input name="company" required></div>
+      <div class="field"><label>Email *</label><input type="email" name="email" required></div>
+      <div class="field"><label>Country *</label><input name="country" required></div>
+      <div class="field"><label>Product / requirement *</label><input name="product" required></div>
+      <div class="field"><label>Quantity</label><input name="quantity"></div>
+      <div class="field"><label>Destination port / city</label><input name="destination"></div>
+      <div class="field"><label>Preferred Incoterm</label><select name="incoterm"><option value="">Select</option><option>FOB</option><option>CIF</option><option>CFR</option><option>EXW</option></select></div>
+      <div class="field"><label>Request type</label><select name="request_type"><option>New quotation</option><option>Payment reference</option><option>Product sourcing</option><option>General enquiry</option></select></div>
+      <div class="field"><label>Reference / PO number</label><input name="reference"></div>
+      <div class="field full"><label>Message / specifications *</label><textarea name="message" required placeholder="Specifications, packaging, quality, target delivery date, etc."></textarea></div>
+      <div class="field full"><label>Attach RFQ / specification / payment proof (optional)</label><input type="file" name="attachment" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"></div>
+    </div>
+    <p class="form-note">For payment proof, attach only the document needed to identify the transaction. Never include passwords, PINs or full card security codes.</p>
+    <button class="btn btn-gold" type="submit">Submit Secure Enquiry</button>
+  </form>
+</div>
 </section>
 
-<section id="about">
-  <div class="container">
-    <h2>Trusted Since 2016</h2>
-    <p class="sub">About Us</p>
-    <div class="about-text">
-      <p>Ali Enterprises is a FBR-registered Pakistani trading company established in October 2016. We facilitate trade between Pakistan and international markets — connecting verified local suppliers with global buyers through transparent sourcing, competitive pricing, and reliable logistics coordination.</p>
-      <br>
-      <ul>
-        <li>FBR Registered since October 2016 — 9+ years in business</li>
-        <li>FCCI Member — Membership # 2120020-16812</li>
-        <li>NTN 7306837-7 | RTO Faisalabad</li>
-        <li>Direct access to verified Pakistani manufacturers and suppliers</li>
-        <li>Transparent quotations with clear Incoterms (FOB, CIF, CFR, EXW)</li>
-        <li>English-speaking sales and support team</li>
-      </ul>
-    </div>
+<section id="about" class="alt">
+<div class="container">
+  <div class="section-head"><div class="kicker">About Ali Enterprises</div><h2>A Pakistan-based trading & sourcing partner.</h2>
+  <p class="lead">Ali Enterprises is a FBR-registered Pakistani trading company established in October 2016. We facilitate trade between Pakistan and international markets by connecting buyers with verified local suppliers through transparent sourcing, competitive pricing and logistics coordination.</p></div>
+  <div class="cards">
+    <div class="card"><h3>Verified supply access</h3><p>Direct access to Pakistani manufacturers and suppliers across multiple product categories.</p></div>
+    <div class="card"><h3>Transparent quotations</h3><p>Clear commercial terms and applicable Incoterms including FOB, CIF, CFR and EXW.</p></div>
+    <div class="card"><h3>International communication</h3><p>English-speaking sales and support for cross-border enquiries and coordination.</p></div>
   </div>
+</div>
 </section>
+
+<section>
+<div class="container">
+  <div class="section-head"><div class="kicker">Our Offices</div><h2>Pakistan presence</h2></div>
+  <div class="cards">
+    <div class="card"><h3>Head Office</h3><p>Port Qasim, Karachi, Pakistan</p></div>
+    <div class="card"><h3>Branch Office</h3><p>St # 3, Aminpur Bazar, Faisalabad, Pakistan</p></div>
+    <div class="card"><h3>Office</h3><p>Bahria Orchard, Lahore, Pakistan</p></div>
+  </div>
+</div>
+</section>
+</main>
+
+<a class="wa" href="https://wa.me/923366666967" target="_blank" rel="noopener">WhatsApp</a>
 
 <footer>
-  <p><strong>Ali Enterprises</strong></p>
-  <p>Head Office: Port Qasim, Karachi | Branch: Aminpur Bazar, Faisalabad | Office: Bahria Orchard, Lahore</p>
-  <p>NTN: 7306837-7 | FCCI: 2120020-16812</p>
-  <p style="margin-top:10px;">© 2016–2026 Ali Enterprises. All rights reserved.</p>
+<div class="container">
+  <div class="footer-grid">
+    <div><h3>ALI ENTERPRISES</h3><p>Import • Export • Global Sourcing</p><p style="margin-top:8px">Pakistan · Since 2016</p></div>
+    <div><h3>Credentials</h3><p>NTN: 7306837-7</p><p>FCCI: 2120020-16812</p></div>
+    <div><h3>Contact</h3><p>+92 336 6666967</p><p>Port Qasim, Karachi</p></div>
+  </div>
+  <div class="copy">© 2016–2026 Ali Enterprises. All rights reserved.</div>
+</div>
 </footer>
-
 </body>
 </html>
