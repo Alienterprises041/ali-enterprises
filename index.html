@@ -25,38 +25,35 @@ a{text-decoration:none;color:inherit}
 header{position:sticky;top:0;z-index:50;background:rgba(7,26,51,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(229,201,135,.18)}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;letter-spacing:.02em}
-.mark{width:40px;height:40px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold2);font-weight:900;font-size:19px}
+.mark{width:48px;height:48px;border:1px solid rgba(229,201,135,.8);border-radius:15px;display:grid;place-items:center;color:#071a33;font-weight:950;font-size:22px;background:linear-gradient(145deg,#f2d58c,#b8862d);box-shadow:0 8px 24px rgba(201,164,91,.22);position:relative}.mark:after{content:"◉";position:absolute;font-size:12px;right:5px;bottom:3px;color:#fff}
 .brand small{display:block;color:#b9c4d4;font-size:9px;letter-spacing:.18em;font-weight:600}
 nav{display:flex;gap:22px;align-items:center}
 nav a{color:#e8edf5;font-size:14px}
 nav a:hover{color:var(--gold2)}
 .nav-cta{padding:10px 16px;border:1px solid var(--gold);border-radius:999px;color:var(--gold2)!important}
-.hero{background:
- radial-gradient(circle at 80% 15%,rgba(201,164,91,.18),transparent 30%),
- linear-gradient(135deg,var(--navy),#102f58 65%,#071a33);
-color:#fff;padding:92px 0 80px;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero{position:relative;background:radial-gradient(circle at 78% 18%,rgba(229,201,135,.25),transparent 23%),radial-gradient(circle at 15% 85%,rgba(30,112,176,.24),transparent 28%),linear-gradient(135deg,#041326 0%,#0b2850 55%,#06182f 100%);color:#fff;padding:108px 0 74px;overflow:hidden}.hero:before{content:"";position:absolute;inset:-40%;background:repeating-radial-gradient(circle at 78% 30%,transparent 0 46px,rgba(229,201,135,.045) 47px 48px);transform:rotate(-12deg);pointer-events:none}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(229,201,135,.12);border-radius:50%;right:-190px;top:-180px;box-shadow:0 0 0 45px rgba(229,201,135,.025),0 0 0 90px rgba(229,201,135,.018)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
 .kicker{color:var(--gold2);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:16px}
-h1{font-size:clamp(42px,6vw,72px);line-height:1.03;letter-spacing:-.045em;margin-bottom:22px}
+h1{font-size:clamp(44px,6.5vw,78px);line-height:1.0;letter-spacing:-.055em;margin-bottom:22px;text-shadow:0 12px 35px rgba(0,0,0,.2)}
 .hero p{color:#d5deea;font-size:18px;max-width:650px}
 .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;font-weight:750;border:1px solid transparent}
 .btn-gold{background:var(--gold);color:#071a33}
 .btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
-.hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(229,201,135,.25);padding:28px;border-radius:22px;box-shadow:var(--shadow)}
-.hero-card .big{font-size:42px;font-weight:850;color:var(--gold2)}
+.hero-card{background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.035));border:1px solid rgba(229,201,135,.34);padding:30px;border-radius:28px;box-shadow:0 28px 70px rgba(0,0,0,.25);backdrop-filter:blur(16px)}
+.hero-card .big{font-size:48px;font-weight:900;color:var(--gold2);letter-spacing:-.04em}
 .hero-card p{font-size:14px;margin-top:3px}
-.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.14);margin-top:22px}
-.stat{background:rgba(7,26,51,.55);padding:18px}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.12);margin-top:22px;border-radius:16px;overflow:hidden}
+.stat{background:rgba(4,19,38,.52);padding:19px}
 .stat strong{display:block;font-size:25px;color:#fff}
 .stat span{font-size:11px;color:#b9c4d4}
-section{padding:82px 0}
+.trust-strip{background:#fff;border-bottom:1px solid #ece7da;box-shadow:0 10px 30px rgba(7,26,51,.04);position:relative;z-index:2}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:18px 0}.trust-grid>div{padding:10px 22px;border-right:1px solid #e7e3da}.trust-grid>div:last-child{border-right:0}.trust-grid b{display:block;color:var(--navy);font-size:17px}.trust-grid span{font-size:12px;color:#758195}section{padding:96px 0}
 .section-head{max-width:720px;margin-bottom:38px}
 .section-head .kicker{color:#9a783b}
 h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-.035em;color:var(--navy);margin-bottom:12px}
 .lead{color:var(--muted);font-size:17px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff;box-shadow:0 8px 30px rgba(7,26,51,.05)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;padding:28px;background:linear-gradient(180deg,#fff,#fbfcfe);box-shadow:0 12px 36px rgba(7,26,51,.06)}.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold),transparent)}
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow);transition:.2s}
 .icon{width:44px;height:44px;border-radius:12px;background:#f2ead9;color:#8a6a32;display:grid;place-items:center;font-weight:900;margin-bottom:18px}
 .card h3{font-size:19px;color:var(--navy);margin-bottom:8px}
@@ -64,12 +61,18 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-.035em;color:v
 .card a{display:inline-block;margin-top:16px;color:#8a6a32;font-weight:750;font-size:13px}
 .alt{background:var(--ivory)}
 .markets{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.market{padding:24px 16px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:16px}
-.market strong{display:block;color:var(--navy);margin-top:8px;font-size:14px}
+.market{padding:28px 16px;text-align:center;background:linear-gradient(180deg,#fff,#f8fafc);border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 25px rgba(7,26,51,.045)}
+.market{cursor:pointer;transition:.22s;position:relative}.market:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(7,26,51,.10);border-color:#d8bd82}.market strong{display:block;color:var(--navy);margin-top:8px;font-size:14px}.market .country-list{display:none;text-align:left;margin:16px 0 0;padding:14px 14px 2px;border-top:1px solid #e8dfcf;color:#526174;font-size:13px;line-height:1.85}.market.open .country-list{display:block}.market .tap{display:block;margin-top:10px;color:#9a783b;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .credentials{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.credential{border:1px solid var(--line);border-radius:20px;padding:28px;background:#fff}
+.credential{border:1px solid var(--line);border-radius:22px;padding:30px;background:linear-gradient(145deg,#fff,#faf8f2);box-shadow:0 10px 35px rgba(7,26,51,.055)}
 .credential strong{color:var(--navy);font-size:20px;display:block;margin-bottom:5px}
-.credential span{color:var(--muted);font-size:14px}
+ .credential span{color:var(--muted);font-size:14px}
+.credential-brand{display:flex;align-items:center;gap:18px;margin-bottom:16px}
+.credential-brand img{width:82px;height:72px;object-fit:contain;background:#fff;border-radius:12px;padding:6px}
+.credential-brand .brand-copy{flex:1}
+.credential-brand .brand-copy strong{margin-bottom:4px}
+.credential-brand .brand-copy small{display:block;color:#64748b;font-size:12px;line-height:1.4}
+@media(max-width:560px){.credential-brand img{width:72px;height:64px}.credential-brand{gap:14px}}
 .certificate-wrap{margin-top:30px;padding:18px;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
 .certificate-wrap img{display:block;width:100%;height:auto;border-radius:10px}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -92,7 +95,7 @@ input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d9dee7;bord
 textarea{min-height:120px;resize:vertical}
 .form-note{font-size:12px;color:var(--muted);margin:12px 0 18px}
 .payment{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.payment-box{border:1px solid var(--line);border-radius:20px;padding:26px;background:#fff}
+.payment-box{border:1px solid var(--line);border-radius:24px;padding:28px;background:linear-gradient(145deg,#fff,#fafbfe);box-shadow:0 14px 40px rgba(7,26,51,.06)}
 .payment-box h3{color:var(--navy);margin-bottom:9px}
 .notice{background:#f7f1e4;border-left:4px solid var(--gold);padding:14px 16px;border-radius:8px;color:#5d4b2c;font-size:13px}
 footer{background:#061426;color:#aeb9c8;padding:45px 0 25px}
@@ -100,20 +103,49 @@ footer{background:#061426;color:#aeb9c8;padding:45px 0 25px}
 footer h3{color:#fff;margin-bottom:10px}
 footer a:hover{color:#fff}
 .copy{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:18px;font-size:12px}
-.wa{position:fixed;right:18px;bottom:18px;background:#18a56b;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.18);z-index:40}
+.wa{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,#1bbf7a,#0d9b60);color:#fff;padding:13px 18px;border-radius:999px;font-weight:850;box-shadow:0 12px 35px rgba(13,155,96,.3);z-index:40}
 .mobile-menu{display:none}
+
+.payment-banks{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.payment-banks .payment-box{display:flex;flex-direction:column}
+.payment-banks .payment-box .kicker{margin-bottom:8px}
+.payment-banks .payment-box h3{font-size:24px;margin-bottom:16px}
+.payment-banks .payment-box p{font-size:14px;line-height:1.55;margin:4px 0;color:#425066}
+.payment-banks .payment-box p strong{color:#162235}
+.payment-banks .payment-box > div:last-child{margin-top:auto!important;padding-top:22px}
+.payment-banks .payment-box img{display:block;width:210px;height:210px;object-fit:contain;margin:0 auto}
+
 @media(max-width:850px){
+ .trust-grid{grid-template-columns:1fr 1fr}.trust-grid>div:nth-child(2){border-right:0}.trust-grid>div{border-bottom:1px solid #e7e3da}.trust-grid>div:nth-child(3),.trust-grid>div:nth-child(4){border-bottom:0}
  nav{display:none}.mobile-menu{display:block;color:#fff;border:1px solid rgba(255,255,255,.25);padding:8px 11px;border-radius:8px}
  .hero-grid,.rfq,.credentials,.payment{grid-template-columns:1fr}
  .cards,.steps{grid-template-columns:1fr 1fr}.markets{grid-template-columns:repeat(2,1fr)}
  .footer-grid{grid-template-columns:1fr}
 }
+@media(max-width:850px){
+ .payment-banks{grid-template-columns:1fr}
+ .payment-banks .payment-box{padding:24px}
+}
 @media(max-width:560px){
- section{padding:62px 0}.hero{padding:70px 0 55px}.hero-grid{gap:30px}
+ .trust-grid{grid-template-columns:1fr 1fr}.trust-grid>div{padding:9px 12px}.trust-grid b{font-size:14px}.trust-grid span{font-size:10px}.brand small{font-size:7px}.mark{width:43px;height:43px;border-radius:13px}
+ section{padding:68px 0}.hero{padding:70px 0 55px}.hero-grid{gap:30px}
  .cards,.steps,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}
  h1{font-size:44px}.hero p{font-size:16px}.brand span{font-size:15px}
  .stat-grid{grid-template-columns:1fr 1fr}
 }
+
+/* Premium trade imagery */
+.trade-gallery{padding-top:18px}
+.gallery-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr;gap:18px}
+.gallery-card{position:relative;overflow:hidden;min-height:280px;border-radius:24px;border:1px solid rgba(201,164,79,.28);background:#071a33;box-shadow:0 18px 45px rgba(7,26,51,.12)}
+.gallery-card img{width:100%;height:100%;min-height:280px;object-fit:cover;display:block;transition:transform .5s ease}
+.gallery-card:hover img{transform:scale(1.045)}
+.gallery-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(7,26,51,.82) 100%)}
+.gallery-copy{position:absolute;left:22px;right:22px;bottom:20px;z-index:2;color:#fff}
+.gallery-copy .kicker{color:#e3bf68;margin-bottom:7px}.gallery-copy h3{margin:0;font-size:24px;color:#fff}.gallery-copy p{margin:5px 0 0;color:rgba(255,255,255,.8);font-size:13px}
+.gallery-credit{margin-top:12px;font-size:11px;color:#718096}.gallery-credit a{color:#8d6d2c}
+@media(max-width:850px){.gallery-grid{grid-template-columns:1fr 1fr}.gallery-card:first-child{grid-column:1/-1}.gallery-card,.gallery-card img{min-height:250px}}
+@media(max-width:560px){.gallery-grid{grid-template-columns:1fr}.gallery-card:first-child{grid-column:auto}.gallery-card,.gallery-card img{min-height:235px}.gallery-copy h3{font-size:21px}}
 </style>
 </head>
 <body>
@@ -149,8 +181,8 @@ footer a:hover{color:#fff}
     </div>
     <div class="hero-card">
       <div class="kicker">Trade Partner</div>
-      <div class="big">9+ Years</div>
-      <p>of Pakistan-based trading and sourcing experience.</p>
+      <div class="big">10+ Years</div>
+      <p>of Pakistan-based trading and sourcing experience since 2016.</p>
       <div class="stat-grid">
         <div class="stat"><strong>6+</strong><span>Product Categories</span></div>
         <div class="stat"><strong>5</strong><span>Market Regions</span></div>
@@ -158,6 +190,40 @@ footer a:hover{color:#fff}
         <div class="stat"><strong>PSW</strong><span>Export Training</span></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="container trust-grid">
+    <div><b>10+ Years</b><span>Trusted Trade Partner</span></div>
+    <div><b>Global Network</b><span>Supplying Worldwide</span></div>
+    <div><b>Verified Business</b><span>FBR Registered · PSW Trained</span></div>
+    <div><b>Export Ready</b><span>Cross-Border Trade</span></div>
+  </div>
+</section>
+
+<section class="trade-gallery">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Global Trade in Motion</div>
+      <h2>From Port to Project</h2>
+      <p class="lead">Visual highlights of the logistics, automotive and renewable-energy sectors we can source for international buyers.</p>
+    </div>
+    <div class="gallery-grid">
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1774929103406-59c8882a9954?auto=format&fit=crop&fm=jpg&q=82&w=1600" alt="Cargo ships and shipping containers at a port" loading="lazy">
+        <div class="gallery-copy"><div class="kicker">Logistics</div><h3>Container Ports</h3><p>International shipping, cargo handling & global supply chains</p></div>
+      </article>
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1761993600321-757e086491c0?auto=format&fit=crop&fm=jpg&q=82&w=1200" alt="Cars loaded onto a car carrier truck" loading="lazy">
+        <div class="gallery-copy"><div class="kicker">Automotive</div><h3>Vehicle Logistics</h3><p>Cars, transport and commercial sourcing</p></div>
+      </article>
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1670519808728-335b1eb2ef52?auto=format&fit=crop&fm=jpg&q=82&w=1200" alt="Solar panels in Pakistan" loading="lazy">
+        <div class="gallery-copy"><div class="kicker">Renewable Energy</div><h3>Solar Solutions</h3><p>Solar panels, equipment and energy projects</p></div>
+      </article>
+    </div>
+    <div class="gallery-credit">Photography: Unsplash contributors. Images are used under the Unsplash License.</div>
   </div>
 </section>
 
@@ -182,11 +248,11 @@ footer a:hover{color:#fff}
 <div class="container">
   <div class="section-head"><div class="kicker">Global Reach</div><h2>Markets we serve</h2><p class="lead">Built for cross-border trade, documentation and buyer communication.</p></div>
   <div class="markets">
-    <div class="market">🌐<strong>Middle East</strong></div>
-    <div class="market">🏛️<strong>Europe</strong></div>
-    <div class="market">🌏<strong>Asia</strong></div>
-    <div class="market">🌍<strong>Africa</strong></div>
-    <div class="market">🌎<strong>North America</strong></div>
+    <div class="market" role="button" tabindex="0" aria-expanded="false">🌐<strong>Middle East</strong><span class="tap">Tap to view countries</span><div class="country-list">🇦🇪 United Arab Emirates<br>🇸🇦 Saudi Arabia<br>🇶🇦 Qatar<br>🇰🇼 Kuwait<br>🇴🇲 Oman<br>🇧🇭 Bahrain<br>🇯🇴 Jordan</div></div>
+    <div class="market" role="button" tabindex="0" aria-expanded="false">🏛️<strong>Europe</strong><span class="tap">Tap to view countries</span><div class="country-list">🇬🇧 United Kingdom<br>🇩🇪 Germany<br>🇫🇷 France<br>🇮🇹 Italy<br>🇪🇸 Spain<br>🇳🇱 Netherlands<br>🇧🇪 Belgium</div></div>
+    <div class="market" role="button" tabindex="0" aria-expanded="false">🌏<strong>Asia</strong><span class="tap">Tap to view countries</span><div class="country-list">🇨🇳 China<br>🇯🇵 Japan<br>🇰🇷 South Korea<br>🇲🇾 Malaysia<br>🇮🇩 Indonesia<br>🇧🇩 Bangladesh<br>🇹🇭 Thailand</div></div>
+    <div class="market" role="button" tabindex="0" aria-expanded="false">🌍<strong>Africa</strong><span class="tap">Tap to view countries</span><div class="country-list">🇪🇬 Egypt<br>🇿🇦 South Africa<br>🇰🇪 Kenya<br>🇹🇿 Tanzania<br>🇳🇬 Nigeria<br>🇲🇦 Morocco<br>🇬🇭 Ghana</div></div>
+    <div class="market" role="button" tabindex="0" aria-expanded="false">🌎<strong>North America</strong><span class="tap">Tap to view countries</span><div class="country-list">🇺🇸 United States<br>🇨🇦 Canada<br>🇲🇽 Mexico</div></div>
   </div>
 </div>
 </section>
@@ -195,8 +261,26 @@ footer a:hover{color:#fff}
 <div class="container">
   <div class="section-head"><div class="kicker">Trust & Credentials</div><h2>Verified business information</h2></div>
   <div class="credentials">
-    <div class="credential"><strong>FBR Registered</strong><span>Established October 2016 · NTN 7306837-7 · RTO Faisalabad</span></div>
-    <div class="credential"><strong>FCCI Member</strong><span>Membership # 2120020-16812 · Since December 2024</span></div>
+    <div class="credential">
+      <div class="credential-brand">
+        <img src="https://i.brecorder.com/primary/2021/01/5ff8dc82926d8.jpg" alt="FBR Pakistan logo" loading="lazy">
+        <div class="brand-copy">
+          <strong>Federal Board of Revenue</strong>
+          <small>Government of Pakistan · FBR</small>
+        </div>
+      </div>
+      <span>Registered business · NTN 7306837-7 · RTO Faisalabad · Established October 2016</span>
+    </div>
+    <div class="credential">
+      <div class="credential-brand">
+        <img src="https://i.brecorder.com/primary/2021/12/61ca3e724ba05.jpg" alt="FCCI logo" loading="lazy">
+        <div class="brand-copy">
+          <strong>Faisalabad Chamber of Commerce &amp; Industry</strong>
+          <small>FCCI · Business Membership</small>
+        </div>
+      </div>
+      <span>Membership # 2120020-16812 · Since December 2024</span>
+    </div>
   </div>
   <div class="certificate-wrap">
     <div class="section-head" style="margin-bottom:20px"><div class="kicker">Certified Export Expertise</div><h2 style="font-size:30px">Pakistan export training</h2><p class="lead">Certificate of Accomplishment issued by Pakistan Single Window (PSW) through ilmX.</p></div>
@@ -223,10 +307,10 @@ footer a:hover{color:#fff}
 <div class="container">
   <div class="section-head"><div class="kicker">Secure Commercial Payments</div><h2>Bank transfer & payment</h2><p class="lead">Choose the official Ali Enterprises account shown on your quotation or proforma invoice. Both accounts are in the name of Ali Enterprises.</p></div>
 
-  <div class="payment" style="grid-template-columns:1fr 1fr;">
+  <div class="payment payment-banks">
     <div class="payment-box">
       <div class="kicker">Bank 01</div>
-      <h3>Bank Alfalah</h3>
+      <h3>Bank Alfalah Limited</h3>
       <p><strong>Account Title:</strong> ALI ENTERPRISES</p>
       <p><strong>Account No:</strong> 02601008895049</p>
       <p><strong>IBAN:</strong> PK29ALFH026001008895049</p>
@@ -242,7 +326,7 @@ footer a:hover{color:#fff}
 
     <div class="payment-box">
       <div class="kicker">Bank 02</div>
-      <h3>Meezan Bank</h3>
+      <h3>Meezan Bank Limited</h3>
       <p><strong>Account Title:</strong> ALI ENTERPRISES</p>
       <p><strong>Account No:</strong> 04820109950346</p>
       <p><strong>IBAN:</strong> PK92MEZN0004820109950346</p>
@@ -321,6 +405,19 @@ footer a:hover{color:#fff}
 </div>
 </section>
 </main>
+
+<script>
+  document.querySelectorAll('.market').forEach(function(card){
+    function toggle(){
+      const isOpen=card.classList.toggle('open');
+      card.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', function(e){
+      if(e.key==='Enter' || e.key===' '){ e.preventDefault(); toggle(); }
+    });
+  });
+</script>
 
 <a class="wa" href="https://wa.me/923366666967" target="_blank" rel="noopener">WhatsApp</a>
 
