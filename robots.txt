@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ali-enterprises.netlify.app/sitemap.xml
