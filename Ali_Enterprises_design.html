@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Enterprises - Import Export</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { navy: '#0a1128', gold: '#d4af37' },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(10,17,40,.7),rgba(10,17,40,.7)),
+            url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+<nav class="bg-navy text-white py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center border-b border-gray-700">
+    <div class="flex items-center space-x-3 mb-4 md:mb-0">
+        <div class="text-gold text-3xl font-serif font-bold">A</div>
+        <div>
+            <h1 class="font-serif text-xl tracking-wide">ALI ENTERPRISES</h1>
+            <p class="text-[10px] tracking-widest text-gray-400">IMPORT • EXPORT • GLOBAL SOURCING</p>
+        </div>
+    </div>
+    <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-sm">
+        <a href="#" class="hover:text-gold transition border-b-2 border-gold pb-1">Home</a>
+        <a href="#" class="hover:text-gold transition text-gray-300">Products</a>
+        <a href="#" class="hover:text-gold transition text-gray-300">Markets</a>
+        <a href="#" class="hover:text-gold transition text-gray-300">About</a>
+        <a href="#" class="hover:text-gold transition text-gray-300">Certificates</a>
+        <a href="#" class="hover:text-gold transition text-gray-300">Payment</a>
+        <a href="#" class="border border-gold text-gold px-4 py-1.5 rounded hover:bg-gold hover:text-navy transition text-xs font-semibold">RFQ</a>
+        <a href="#" class="bg-[#25D366] text-white px-4 py-1.5 rounded flex items-center gap-2 text-xs font-semibold hover:bg-green-600 transition">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+</nav>
+
+<header class="hero-bg text-white py-24 px-6 md:px-12 relative flex flex-col justify-center min-h-[500px]">
+    <div class="max-w-4xl">
+        <p class="text-gold text-sm font-semibold tracking-widest mb-4 uppercase">Pakistan To Global Markets</p>
+        <h2 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-4">ALI ENTERPRISES</h2>
+        <p class="text-gray-300 text-sm tracking-widest mb-6 uppercase">Import • Export • Global Sourcing</p>
+        <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+            Your trusted trade partner from Pakistan to the World. We source, supply and deliver quality products globally.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <button class="bg-gold text-navy font-semibold px-8 py-3 rounded hover:bg-yellow-600 transition flex items-center justify-center gap-2">
+                Request a Quote <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="border border-white text-white font-semibold px-8 py-3 rounded hover:bg-white hover:text-navy transition">
+                Explore Products
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="bg-navy text-white py-6 px-6 md:px-12 border-t border-gray-700">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center md:text-left">
+        <div class="flex items-center gap-3"><i class="fas fa-medal text-gold text-2xl"></i><div><h4 class="text-xs font-bold">10+ Years</h4><p class="text-[10px] text-gray-400">Trusted Trade Partner</p></div></div>
+        <div class="flex items-center gap-3"><i class="fas fa-globe text-gold text-2xl"></i><div><h4 class="text-xs font-bold">Global Network</h4><p class="text-[10px] text-gray-400">Supplying Worldwide</p></div></div>
+        <div class="flex items-center gap-3"><i class="fas fa-box text-gold text-2xl"></i><div><h4 class="text-xs font-bold">Quality Products</h4><p class="text-[10px] text-gray-400">Reliable & Compliant</p></div></div>
+        <div class="flex items-center gap-3"><i class="fas fa-certificate text-gold text-2xl"></i><div><h4 class="text-xs font-bold">Verified Business</h4><p class="text-[10px] text-gray-400">FBR Registered - PSW Trained</p></div></div>
+        <div class="flex items-center gap-3"><i class="fas fa-handshake text-gold text-2xl"></i><div><h4 class="text-xs font-bold">Verified Trader</h4><p class="text-[10px] text-gray-400">Global Trade Partner</p></div></div>
+    </div>
+</div>
+
+<div class="bg-navy text-white py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center border-t border-gray-700 border-b border-gray-700">
+    <h3 class="text-sm font-bold tracking-wider mb-4 md:mb-0 text-gold">OUR GLOBAL MARKETS: <span class="text-white">Trade Across Key Regions</span></h3>
+    <div class="flex flex-wrap justify-center gap-2 md:gap-4 text-xs">
+        <button class="border border-gray-600 px-4 py-1.5 rounded-full hover:border-gold hover:text-gold transition flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> Middle East <i class="fas fa-chevron-down"></i></button>
+        <button class="border border-gray-600 px-4 py-1.5 rounded-full hover:border-gold hover:text-gold transition flex items-center gap-2"><i class="fas fa-globe-europe"></i> Europe <i class="fas fa-chevron-down"></i></button>
+        <button class="border border-gray-600 px-4 py-1.5 rounded-full hover:border-gold hover:text-gold transition flex items-center gap-2"><i class="fas fa-globe-asia"></i> Asia <i class="fas fa-chevron-down"></i></button>
+        <button class="border border-gray-600 px-4 py-1.5 rounded-full hover:border-gold hover:text-gold transition flex items-center gap-2"><i class="fas fa-globe-africa"></i> Africa <i class="fas fa-chevron-down"></i></button>
+        <button class="border border-gray-600 px-4 py-1.5 rounded-full hover:border-gold hover:text-gold transition flex items-center gap-2"><i class="fas fa-globe-americas"></i> North America <i class="fas fa-chevron-down"></i></button>
+    </div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 p-1 bg-gray-200">
+    <div class="relative group h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" alt="Containers" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-navy/90 to-transparent flex flex-col justify-end p-6 text-white"><i class="fas fa-ship text-gold text-xl mb-2"></i><h4 class="font-bold text-sm tracking-wider">CONTAINERS & PORTS</h4><p class="text-[10px] text-gray-300">Karachi Port operations, shipping & logistics</p></div></div>
+    <div class="relative group h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=2073&auto=format&fit=crop" alt="Vehicles" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-navy/90 to-transparent flex flex-col justify-end p-6 text-white"><i class="fas fa-car text-gold text-xl mb-2"></i><h4 class="font-bold text-sm tracking-wider">VEHICLE EXPORTS</h4><p class="text-[10px] text-gray-300">Cars, SUVs and commercial vehicles</p></div></div>
+    <div class="relative group h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop" alt="Solar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-navy/90 to-transparent flex flex-col justify-end p-6 text-white"><i class="fas fa-solar-panel text-gold text-xl mb-2"></i><h4 class="font-bold text-sm tracking-wider">SOLAR SOLUTIONS</h4><p class="text-[10px] text-gray-300">Solar panels, inverters and related products</p></div></div>
+    <div class="relative group h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop" alt="Import Export" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-navy/90 to-transparent flex flex-col justify-end p-6 text-white"><i class="fas fa-boxes text-gold text-xl mb-2"></i><h4 class="font-bold text-sm tracking-wider">IMPORT & EXPORT</h4><p class="text-[10px] text-gray-300">Global sourcing and container shipments</p></div></div>
+</div>
+
+<div class="bg-gray-50 py-12 px-6 md:px-12">
+    <div class="mb-8"><p class="text-gold text-xs font-bold tracking-widest uppercase mb-1">Our Business Credentials</p><h3 class="font-serif text-3xl text-navy">Trusted & Registered</h3></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center text-center">
+        <div class="flex flex-col items-center"><div class="flex items-center text-blue-800 font-bold text-xl mb-2 gap-2"><i class="fas fa-landmark"></i> FBR</div><p class="text-xs text-gray-600">Federal Board of Revenue</p><p class="text-[10px] text-gray-400">Government of Pakistan</p><p class="text-[10px] text-gray-400 mt-1">Income Tax - Sales Tax - Federal Excise</p></div>
+        <div class="flex flex-col items-center"><div class="flex items-center text-green-700 font-bold text-xl mb-2 gap-2"><i class="fas fa-building"></i> FCCI</div><p class="text-xs text-gray-600">Faisalabad Chamber of Commerce & Industry</p><p class="text-[10px] text-gray-400">Faisalabad, Pakistan</p><p class="text-[10px] text-gray-400 mt-1">The Voice of Business Community</p></div>
+        <div class="flex flex-col items-center"><div class="flex items-center text-blue-500 font-bold text-xl mb-2 gap-2"><i class="fas fa-network-wired"></i> PSW</div><p class="text-xs text-gray-600">Pakistan Single Window</p><p class="text-[10px] text-gray-400">FBR Registered</p><p class="text-[10px] text-gray-400 mt-1">PSW Trained</p></div>
+        <div class="flex flex-col items-center"><div class="flex items-center text-navy font-bold text-xl mb-2 gap-2"><i class="fas fa-globe"></i> Verified Trader</div><p class="text-xs text-gray-600">Global Trade Partner</p><p class="text-[10px] text-gray-400 mt-1">Reliable & Compliant</p></div>
+    </div>
+</div>
+
+</body>
+</html>
