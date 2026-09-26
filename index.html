@@ -31,22 +31,7 @@ nav{display:flex;gap:22px;align-items:center}
 nav a{color:#e8edf5;font-size:14px}
 nav a:hover{color:var(--gold2)}
 .nav-cta{padding:10px 16px;border:1px solid var(--gold);border-radius:999px;color:var(--gold2)!important}
-.hero{position:relative;background:radial-gradient(circle at 78% 18%,rgba(229,201,135,.25),transparent 23%),radial-gradient(circle at 15% 85%,rgba(30,112,176,.24),transparent 28%),linear-gradient(135deg,#041326 0%,#0b2850 55%,#06182f 100%);color:#fff;padding:108px 0 74px;overflow:hidden}.hero:before{content:"";position:absolute;inset:-40%;background:repeating-radial-gradient(circle at 78% 30%,transparent 0 46px,rgba(229,201,135,.045) 47px 48px);transform:rotate(-12deg);pointer-events:none}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(229,201,135,.12);border-radius:50%;right:-190px;top:-180px;box-shadow:0 0 0 45px rgba(229,201,135,.025),0 0 0 90px rgba(229,201,135,.018)}
-.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
-.kicker{color:var(--gold2);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:16px}
-h1{font-size:clamp(44px,6.5vw,78px);line-height:1.0;letter-spacing:-.055em;margin-bottom:22px;text-shadow:0 12px 35px rgba(0,0,0,.2)}
-.hero p{color:#d5deea;font-size:18px;max-width:650px}
-.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;font-weight:750;border:1px solid transparent}
-.btn-gold{background:var(--gold);color:#071a33}
-.btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
-.hero-card{background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.035));border:1px solid rgba(229,201,135,.34);padding:30px;border-radius:28px;box-shadow:0 28px 70px rgba(0,0,0,.25);backdrop-filter:blur(16px)}
-.hero-card .big{font-size:48px;font-weight:900;color:var(--gold2);letter-spacing:-.04em}
-.hero-card p{font-size:14px;margin-top:3px}
-.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.12);margin-top:22px;border-radius:16px;overflow:hidden}
-.stat{background:rgba(4,19,38,.52);padding:19px}
-.stat strong{display:block;font-size:25px;color:#fff}
-.stat span{font-size:11px;color:#b9c4d4}
+.hero{position:relative;min-height:620px;color:#fff;overflow:hidden;background:#071a33}.hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.04);transition:opacity .8s ease,transform 6s ease}.hero-slide.active{opacity:1;transform:scale(1)}.hero-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,18,38,.94) 0%,rgba(5,23,46,.78) 45%,rgba(5,20,38,.30) 100%)}.hero-content{position:relative;z-index:2;min-height:620px;display:flex;align-items:center}.hero-copy{max-width:760px;padding:80px 0 100px}.kicker{color:var(--gold2);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:16px}.hero h1{font-size:clamp(44px,6vw,78px);line-height:.98;letter-spacing:-.055em;margin-bottom:22px;text-shadow:0 12px 35px rgba(0,0,0,.28)}.hero p{color:#e0e8f1;font-size:18px;max-width:690px}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;font-weight:750;border:1px solid transparent}.btn-gold{background:var(--gold);color:#071a33}.btn-outline{border-color:rgba(255,255,255,.42);color:#fff;background:rgba(7,26,51,.12)}.hero-badges{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px}.hero-badge{display:flex;align-items:center;gap:10px;color:#fff}.hero-badge .badge-icon{width:40px;height:40px;border:1px solid rgba(229,201,135,.7);border-radius:12px;display:grid;place-items:center;color:var(--gold2);font-size:19px;background:rgba(7,26,51,.35)}.hero-badge b{display:block;font-size:13px}.hero-badge span{display:block;color:#c5d0de;font-size:11px}.hero-nav{position:absolute;z-index:3;left:0;right:0;bottom:24px;display:flex;align-items:center;justify-content:center;gap:9px}.hero-dot{width:9px;height:9px;border-radius:50%;border:0;background:rgba(255,255,255,.45);cursor:pointer}.hero-dot.active{width:28px;border-radius:999px;background:var(--gold2)}.hero-arrow{position:absolute;z-index:3;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid rgba(255,255,255,.35);border-radius:50%;background:rgba(4,18,38,.38);color:#fff;font-size:25px;cursor:pointer}.hero-prev{left:24px}.hero-next{right:24px}.hero-label{position:absolute;z-index:3;right:28px;top:30px;background:rgba(7,26,51,.58);border:1px solid rgba(229,201,135,.35);border-radius:14px;padding:14px 17px;color:#fff;font-size:13px;backdrop-filter:blur(10px)}.hero-label b{display:block;color:#fff;font-size:15px}.hero-label span{color:#d4dde7;font-size:11px}.trust-strip{background:#fff;border-bottom:1px solid #ece7da;box-shadow:0 10px 30px rgba(7,26,51,.04);position:relative;z-index:2}.trust-grid{display:grid;grid-template-columns:repeat(5,1fr);padding:18px 0}.trust-grid>div{padding:10px 18px;border-right:1px solid #e7e3da}.trust-grid>div:last-child{border-right:0}.trust-grid b{display:block;color:var(--navy);font-size:15px}.trust-grid span{font-size:11px;color:#758195}
 .trust-strip{background:#fff;border-bottom:1px solid #ece7da;box-shadow:0 10px 30px rgba(7,26,51,.04);position:relative;z-index:2}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:18px 0}.trust-grid>div{padding:10px 22px;border-right:1px solid #e7e3da}.trust-grid>div:last-child{border-right:0}.trust-grid b{display:block;color:var(--navy);font-size:17px}.trust-grid span{font-size:12px;color:#758195}section{padding:96px 0}
 .section-head{max-width:720px;margin-bottom:38px}
 .section-head .kicker{color:#9a783b}
@@ -146,61 +131,199 @@ footer a:hover{color:#fff}
 .gallery-credit{margin-top:12px;font-size:11px;color:#718096}.gallery-credit a{color:#8d6d2c}
 @media(max-width:850px){.gallery-grid{grid-template-columns:1fr 1fr}.gallery-card:first-child{grid-column:1/-1}.gallery-card,.gallery-card img{min-height:250px}}
 @media(max-width:560px){.gallery-grid{grid-template-columns:1fr}.gallery-card:first-child{grid-column:auto}.gallery-card,.gallery-card img{min-height:235px}.gallery-copy h3{font-size:21px}}
+
+.mark{position:relative}.mark .globe{position:absolute;right:4px;bottom:3px;font-size:12px;color:#fff;line-height:1}.mark:after{display:none}
+@media(max-width:850px){.hero{min-height:650px}.hero-content{min-height:650px}.hero-copy{padding:90px 0 100px}.hero-label{right:18px;top:20px}.hero-prev{left:12px}.hero-next{right:12px}.trust-grid{grid-template-columns:repeat(5,minmax(150px,1fr));overflow-x:auto}.trust-grid>div{min-width:150px}.hero-badges{gap:15px}.hero-badge{min-width:150px}}
+@media(max-width:560px){.hero{min-height:680px}.hero-content{min-height:680px}.hero-slide:after{background:linear-gradient(180deg,rgba(4,18,38,.88) 0%,rgba(5,23,46,.68) 50%,rgba(5,20,38,.88) 100%)}.hero-copy{padding:88px 0 120px}.hero h1{font-size:45px;max-width:620px}.hero p{font-size:16px}.hero-label{top:18px;right:16px;padding:10px 12px}.hero-label b{font-size:13px}.hero-label span{font-size:10px}.hero-arrow{width:38px;height:38px;font-size:22px}.hero-badges{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hero-badge:last-child{grid-column:1/-1}.hero-badge .badge-icon{width:34px;height:34px}.trust-grid{grid-template-columns:repeat(5,150px);overflow-x:auto}.trust-grid>div{border-bottom:0!important}.nav{gap:10px}.brand{gap:9px}.brand span:last-child{font-size:14px}.brand small{font-size:6.5px}.mark{width:43px;height:43px;border-radius:12px}}
+
+/* Car import tax calculator */
+.tax-calc{background:linear-gradient(145deg,#071a33,#102c50);color:#fff;border-radius:28px;padding:30px;box-shadow:0 24px 60px rgba(7,26,51,.18);border:1px solid rgba(227,191,104,.22)}
+.tax-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.tax-field{display:grid;gap:7px}.tax-field label{color:#dbe5f2;font-size:12px;font-weight:800}.tax-field input,.tax-field select{background:#fff;color:#12213a;border:0;border-radius:11px;padding:13px 14px;font:inherit}.tax-full{grid-column:1/-1}.tax-help{font-size:12px;color:#b8c6d8;line-height:1.6;margin-top:6px}.tax-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.tax-result{margin-top:22px;background:#fff;color:#12213a;border-radius:20px;padding:22px;display:none}.tax-result.show{display:block}.tax-result h3{margin:0 0 14px;color:#071a33}.tax-lines{display:grid;gap:8px}.tax-line{display:flex;justify-content:space-between;gap:15px;padding:8px 0;border-bottom:1px solid #e8ebf0;font-size:14px}.tax-line.total{font-size:18px;font-weight:900;border-bottom:0;padding-top:15px}.tax-note{margin-top:16px;padding:12px 14px;border-radius:10px;background:#f7f1e4;color:#5d4b2c;font-size:12px;line-height:1.55}.tax-official{margin-top:16px;font-size:12px;color:#64748b}.tax-official a{color:#8d6d2c;font-weight:800}.tax-hidden{display:none}.tax-badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(227,191,104,.13);color:#e3bf68;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+@media(max-width:850px){.tax-grid{grid-template-columns:1fr}.tax-full{grid-column:auto}.tax-calc{padding:22px}.tax-actions .btn{width:100%;text-align:center}}
+
+
+/* ===== Premium front matching the supplied reference ===== */
+.markets-hint{color:#aebdce;font-size:13px;letter-spacing:.03em;padding-bottom:7px}
+@media(max-width:850px){.markets-hint{display:none}}
+body{background:#fff}
+.premium-header{position:absolute!important;top:0;left:0;right:0;background:rgba(4,20,39,.88)!important;border-bottom:1px solid rgba(255,255,255,.15)!important;backdrop-filter:blur(8px)}
+.premium-header .nav{min-height:82px}
+.premium-mark{width:62px;height:62px;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#e3bf68;font-family:Georgia,serif;font-size:54px;line-height:1}
+.premium-mark .globe{font-size:20px;right:1px;bottom:8px;color:#e3bf68}
+.brand-name{font-family:Georgia,serif;font-size:38px;letter-spacing:.02em;line-height:1;color:#fff}
+.brand-name small{font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:12px;letter-spacing:.23em;margin-top:8px;color:#d8e0ea}
+.premium-nav{gap:30px}
+.premium-nav a{font-size:15px;color:#fff;opacity:.95}
+.premium-nav a.active{color:#e3bf68;position:relative}
+.premium-nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-26px;height:2px;background:#e3bf68}
+.premium-rfq{border:1px solid #e3bf68!important;border-radius:8px!important;padding:12px 19px!important;color:#fff!important;background:rgba(227,191,104,.08)}
+.nav-wa{display:flex;align-items:center;gap:8px}
+.nav-wa .wa-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#20b85a;color:#fff;font-size:24px;border:2px solid rgba(255,255,255,.35)}
+.nav-wa b,.nav-wa small{display:block}
+.nav-wa b{font-size:13px}.nav-wa small{font-size:10px;color:#dce5ef}
+.hero{min-height:620px}
+.hero-content{min-height:620px}
+.hero-slide:after{background:linear-gradient(90deg,rgba(3,16,34,.93) 0%,rgba(4,20,40,.72) 43%,rgba(4,18,35,.18) 100%)}
+.hero-copy{padding-top:105px;max-width:820px}
+.hero .kicker{font-size:13px;letter-spacing:.23em;margin-bottom:18px}
+.hero h1{font-family:Georgia,serif;font-size:clamp(58px,6.5vw,94px);letter-spacing:-.04em;line-height:.92;margin-bottom:4px}
+.hero-subbrand{font-size:17px;letter-spacing:.19em;color:#fff;font-weight:700;margin-bottom:20px}
+.hero p{font-size:18px;line-height:1.55}
+.hero .btn{border-radius:8px;padding:13px 25px}
+.hero-badges{gap:25px;margin-top:28px}
+.hero-badge .badge-icon{border-color:#e3bf68;border-radius:8px}
+.hero-label{top:95px;right:40px;font-size:13px;padding:16px 20px;border-radius:12px;background:rgba(6,21,40,.58)}
+.hero-label b{font-size:16px}
+.premium-trust{margin-top:-1px;background:rgba(4,18,35,.94);color:#fff;border-bottom:1px solid rgba(227,191,104,.35);box-shadow:none}
+.premium-trust .trust-grid{display:grid;grid-template-columns:repeat(5,1fr) 160px;padding:0;min-height:95px;overflow:visible}
+.premium-trust .trust-item,.premium-trust .trust-location{display:flex;align-items:center;gap:12px;padding:16px 17px;border-right:1px solid rgba(255,255,255,.16)}
+.premium-trust .trust-icon{width:43px;height:43px;flex:0 0 43px;border:1px solid #e3bf68;border-radius:50%;display:grid;place-items:center;color:#e3bf68;font-weight:900;font-size:17px}
+.premium-trust b{display:block;color:#fff;font-size:14px}
+.premium-trust em{display:block;font-style:normal;color:#bcc8d6;font-size:10px;line-height:1.35}
+.premium-trust .trust-location{border-right:0}
+.premium-trust .trust-location>span:first-child{font-size:30px;color:#e3bf68}
+.trade-gallery{background:#071a33;padding:24px 0 36px}
+.trade-gallery .section-head{display:none}
+.trade-gallery .gallery-grid{grid-template-columns:repeat(4,1fr);gap:12px}
+.trade-gallery .gallery-card{min-height:220px;border-radius:9px}
+.trade-gallery .gallery-card img{min-height:220px}
+.trade-gallery .gallery-copy{left:18px;right:18px;bottom:14px}
+.trade-gallery .gallery-copy .kicker{margin-bottom:3px;font-size:10px}
+.trade-gallery .gallery-copy h3{font-size:19px}
+.trade-gallery .gallery-copy p{font-size:11px}
+.trade-gallery .gallery-credit{display:none}
+#markets{background:#071a33!important;color:#fff;padding:16px 0 60px}
+#markets .section-head{max-width:none;display:flex;align-items:end;justify-content:space-between;margin-bottom:22px}
+#markets .section-head .kicker{color:#e3bf68;margin:0}
+#markets h2{color:#fff;font-family:Georgia,serif;margin:0;font-size:40px}
+#markets .lead{display:none}
+#markets .markets{grid-template-columns:repeat(5,1fr);gap:10px}
+#markets .market{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:8px;padding:16px 12px;text-align:left}
+#markets .market strong{color:#fff;margin:0 0 0 8px;display:inline}
+#markets .market .tap{display:none}
+#markets .market .country-list{color:#dce4ed;border-top-color:rgba(255,255,255,.15)}
+#markets .market.open{border-color:#e3bf68;background:rgba(227,191,104,.08)}
+#products{padding-top:82px}
+@media(max-width:1100px){
+ .premium-nav{gap:17px}.brand-name{font-size:29px}.brand-name small{font-size:9px}
+ .premium-trust .trust-grid{grid-template-columns:repeat(3,1fr) 160px}
+ .premium-trust .trust-item:nth-child(4),.premium-trust .trust-item:nth-child(5){display:none}
+ #markets .markets{grid-template-columns:repeat(3,1fr)}
+ .trade-gallery .gallery-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:850px){
+ .premium-header{position:absolute!important}
+ .premium-header .nav{min-height:74px}
+ .premium-nav{display:none}
+ .brand-name{font-size:20px}
+ .brand-name small{font-size:7px;letter-spacing:.16em;margin-top:6px}
+ .premium-mark{width:48px;height:48px;font-size:43px}
+ .premium-mark .globe{font-size:15px}
+ .hero{min-height:690px}.hero-content{min-height:690px}
+ .hero-copy{padding:130px 0 115px}
+ .hero h1{font-size:53px}.hero-subbrand{font-size:12px;letter-spacing:.15em}
+ .hero p{font-size:16px}
+ .hero-label{top:88px;right:16px}
+ .premium-trust .trust-grid{grid-template-columns:repeat(5,170px);overflow-x:auto}
+ .premium-trust .trust-item{display:flex!important}
+ .premium-trust .trust-location{display:none}
+ #markets .section-head{display:block}
+ #markets h2{font-size:32px;margin-top:5px}
+ #markets .markets{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+ .hero{min-height:720px}.hero-content{min-height:720px}
+ .hero-copy{padding:135px 0 120px}
+ .hero h1{font-size:47px}
+ .hero-subbrand{font-size:10px;letter-spacing:.12em}
+ .hero-label{display:none}
+ .hero-badges{grid-template-columns:1fr 1fr}
+ .premium-trust .trust-grid{grid-template-columns:repeat(5,155px)}
+ .trade-gallery .gallery-grid{grid-template-columns:1fr 1fr}
+ .trade-gallery .gallery-card{min-height:190px}
+ .trade-gallery .gallery-card img{min-height:190px}
+ #markets .markets{grid-template-columns:1fr}
+ #markets .market{padding:14px}
+}
+
+/* AI SITE ASSISTANT */
+.ai-chat-launcher{position:fixed;right:22px;bottom:22px;z-index:120;width:62px;height:62px;border:1px solid #e5c987;border-radius:50%;background:linear-gradient(145deg,#e5c987,#b8862d);color:#071a33;box-shadow:0 14px 34px rgba(7,26,51,.28);font-size:26px;font-weight:900;cursor:pointer}
+.ai-chat-launcher small{position:absolute;right:-2px;top:-4px;background:#0d9b67;color:#fff;border:2px solid #fff;border-radius:99px;font-size:9px;padding:2px 5px}
+.ai-chat-panel{position:fixed;right:22px;bottom:96px;z-index:119;width:min(390px,calc(100vw - 28px));height:min(610px,calc(100vh - 120px));display:none;flex-direction:column;overflow:hidden;border:1px solid rgba(229,201,135,.35);border-radius:22px;background:#fff;box-shadow:0 25px 70px rgba(4,18,38,.28)}
+.ai-chat-panel.open{display:flex}
+.ai-chat-head{background:linear-gradient(135deg,#071a33,#12355f);color:#fff;padding:16px 17px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ai-chat-title{display:flex;align-items:center;gap:11px}
+.ai-bot-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,#e5c987,#b8862d);color:#071a33;font-weight:950;font-size:20px}
+.ai-chat-title b{display:block;font-size:15px}.ai-chat-title span{display:block;font-size:10px;color:#c9d5e4;margin-top:2px}
+.ai-chat-actions{display:flex;gap:7px}
+.ai-lang,.ai-close{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;border-radius:9px;padding:7px 9px;font-size:11px;cursor:pointer}
+.ai-lang.active{background:#e5c987;color:#071a33;border-color:#e5c987;font-weight:800}
+.ai-chat-body{flex:1;overflow:auto;padding:15px;background:#f7f8fa}
+.ai-msg{max-width:88%;padding:11px 13px;border-radius:15px;margin:0 0 10px;font-size:13px;line-height:1.5;white-space:pre-wrap}
+.ai-msg.bot{background:#fff;border:1px solid #e4e7ec;color:#253247;border-top-left-radius:5px}
+.ai-msg.user{margin-left:auto;background:#071a33;color:#fff;border-top-right-radius:5px}
+.ai-quick{display:flex;gap:7px;flex-wrap:wrap;margin:2px 0 12px}
+.ai-quick button{border:1px solid #d8c08a;background:#fff8e9;color:#745923;border-radius:999px;padding:7px 10px;font-size:11px;cursor:pointer}
+.ai-chat-input{padding:11px;border-top:1px solid #e3e6eb;background:#fff;display:flex;gap:7px}
+.ai-chat-input input{flex:1;min-width:0;border-radius:12px;padding:11px 12px}
+.ai-send{width:44px;border:0;border-radius:12px;background:#c9a45b;color:#071a33;font-weight:900;cursor:pointer}
+@media(max-width:560px){
+  .ai-chat-launcher{right:15px;bottom:18px;width:58px;height:58px}
+  .ai-chat-panel{right:10px;bottom:84px;width:calc(100vw - 20px);height:min(600px,calc(100vh - 105px));border-radius:20px}
+}
+
 </style>
 </head>
 <body>
 
-<header>
+<header class="premium-header">
   <div class="container nav">
-    <a class="brand" href="#home">
-      <span class="mark">A</span>
-      <span>ALI ENTERPRISES<small>IMPORT • EXPORT • GLOBAL SOURCING</small></span>
+    <a class="brand" href="#home" aria-label="Ali Enterprises home">
+      <span class="mark premium-mark">A<span class="globe">◎</span></span>
+      <span class="brand-name">ALI ENTERPRISES<small>IMPORT • EXPORT • GLOBAL SOURCING</small></span>
     </a>
-    <nav>
+    <nav class="premium-nav">
+      <a class="active" href="#home">Home</a>
       <a href="#products">Products</a>
       <a href="#markets">Markets</a>
-      <a href="#credentials">Credentials</a>
       <a href="#about">About</a>
-      <a class="nav-cta" href="#rfq">Request a Quote</a>
+      <a href="#credentials">Certificates</a>
+      <a href="#payment">Payment</a>
+      <a class="nav-cta premium-rfq" href="#rfq">➤ &nbsp; RFQ</a>
+      <a class="nav-wa" href="https://wa.me/923366666967" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <span class="wa-icon">◔</span><span><b>WhatsApp</b><small>Chat with us</small></span>
+      </a>
     </nav>
     <a class="mobile-menu" href="#rfq">RFQ</a>
   </div>
 </header>
 
 <main id="home">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <div class="kicker">Pakistan • Since 2016</div>
-      <h1>Connecting Pakistan with Global Markets.</h1>
-      <p>Reliable sourcing, competitive pricing and end-to-end trade support for international buyers and suppliers.</p>
-      <div class="buttons">
-        <a class="btn btn-gold" href="#rfq">Request a Quote</a>
-        <a class="btn btn-outline" href="#products">Explore Products</a>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="kicker">Trade Partner</div>
-      <div class="big">10+ Years</div>
-      <p>of Pakistan-based trading and sourcing experience since 2016.</p>
-      <div class="stat-grid">
-        <div class="stat"><strong>6+</strong><span>Product Categories</span></div>
-        <div class="stat"><strong>5</strong><span>Market Regions</span></div>
-        <div class="stat"><strong>FBR</strong><span>Registered Business</span></div>
-        <div class="stat"><strong>PSW</strong><span>Export Training</span></div>
+<section class="hero" id="heroSlider">
+  <div class="hero-slide active" data-label="Karachi Port" style="background-image:url(https://images.unsplash.com/photo-1774929103406-59c8882a9954?auto=format&fit=crop&fm=jpg&q=88&w=2000)"></div>
+  <div class="hero-slide" data-label="Vehicle Logistics" style="background-image:url(https://images.unsplash.com/photo-1761993600321-757e086491c0?auto=format&fit=crop&fm=jpg&q=88&w=2000)"></div>
+  <div class="hero-slide" data-label="Solar Solutions" style="background-image:url(https://images.unsplash.com/photo-1670519808728-335b1eb2ef52?auto=format&fit=crop&fm=jpg&q=88&w=2000)"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <div class="kicker">Pakistan to Global Markets</div>
+      <h1>ALI ENTERPRISES</h1>
+      <div class="hero-subbrand">IMPORT • EXPORT • GLOBAL SOURCING</div>
+      <p>Your trusted trade partner from Pakistan to the World.<br>We source, supply and deliver quality products globally.</p>
+      <div class="buttons"><a class="btn btn-gold" href="#rfq">Request a Quote&nbsp; →</a><a class="btn btn-outline" href="#products">Explore Products</a></div>
+      <div class="hero-badges">
+        <div class="hero-badge"><div class="badge-icon">◎</div><div><b>Global Sourcing</b><span>Supplying worldwide</span></div></div>
+        <div class="hero-badge"><div class="badge-icon">▣</div><div><b>International Trade</b><span>FOB · CIF · CFR · EXW</span></div></div>
+        <div class="hero-badge"><div class="badge-icon">◇</div><div><b>Quality Products</b><span>Reliable &amp; compliant</span></div></div>
+        <div class="hero-badge"><div class="badge-icon">🤝</div><div><b>Verified Trader</b><span>FBR · PSW · FCCI</span></div></div>
       </div>
     </div>
   </div>
+  <div class="hero-label"><b id="heroLabel">Karachi Port</b><span>Pakistan · Global Logistics</span></div>
+  <button class="hero-arrow hero-prev" aria-label="Previous slide">‹</button><button class="hero-arrow hero-next" aria-label="Next slide">›</button>
+  <div class="hero-nav"><button class="hero-dot active" data-slide="0" aria-label="Karachi Port"></button><button class="hero-dot" data-slide="1" aria-label="Vehicle Logistics"></button><button class="hero-dot" data-slide="2" aria-label="Solar Solutions"></button></div>
 </section>
 
-<section class="trust-strip">
-  <div class="container trust-grid">
-    <div><b>10+ Years</b><span>Trusted Trade Partner</span></div>
-    <div><b>Global Network</b><span>Supplying Worldwide</span></div>
-    <div><b>Verified Business</b><span>FBR Registered · PSW Trained</span></div>
-    <div><b>Export Ready</b><span>Cross-Border Trade</span></div>
-  </div>
-</section>
+<section class="trust-strip"><div class="container trust-grid"><div><b>10+ Years</b><span>Trusted Trade Partner · Since 2016</span></div><div><b>Global Network</b><span>Supplying Worldwide</span></div><div><b>Quality Products</b><span>Reliable & Compliant</span></div><div><b>Verified Business</b><span>FBR Registered · PSW Trained</span></div><div><b>Verified Trader</b><span>Global Trade Partner</span></div></div></section>
 
 <section class="trade-gallery">
   <div class="container">
@@ -244,9 +367,50 @@ footer a:hover{color:#fff}
 </div>
 </section>
 
+<section id="car-tax" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Pakistan Vehicle Import</div>
+      <h2>Car Import Duty & Tax Calculator</h2>
+      <p class="lead">Estimate the major import duties and taxes for a car. Use the official FBR tariff/rates for the exact PCT classification and current assessment.</p>
+    </div>
+    <div class="tax-calc">
+      <div class="tax-badge">FBR-aligned estimate</div>
+      <div class="tax-grid">
+        <div class="tax-field tax-full">
+          <label>Calculation type</label>
+          <select id="taxType" onchange="toggleTaxMode()">
+            <option value="custom">Custom import estimate — enter current FBR rates</option>
+            <option value="scheme">Used Asian Make — Personal Baggage / Gift / Transfer of Residence</option>
+          </select>
+        </div>
+
+        <div class="tax-field" id="valueField"><label>Vehicle / assessable value (USD)</label><input id="usd" type="number" min="0" step="1" placeholder="e.g. 25000"></div>
+        <div class="tax-field" id="fxField"><label>USD → PKR exchange rate</label><input id="fx" type="number" min="0" step="0.01" value="280"></div>
+        <div class="tax-field"><label>Engine capacity (cc)</label><input id="cc" type="number" min="0" step="1" placeholder="e.g. 1496"></div>
+        <div class="tax-field"><label>Vehicle type</label><select id="fuel"><option>Petrol / Diesel</option><option>Hybrid Electric (HEV)</option><option>Electric Vehicle (EV)</option></select></div>
+
+        <div class="tax-field tax-hidden" id="ageField"><label>Vehicle age (months)</label><input id="age" type="number" min="0" max="36" step="1" value="0"></div>
+        <div class="tax-field tax-hidden" id="schemeField"><label>Asian make under scheme?</label><select id="asian"><option value="yes">Yes</option><option value="no">No</option></select></div>
+
+        <div class="tax-field" id="cdField"><label>Customs duty rate (%)</label><input id="cd" type="number" min="0" step="0.01" value="0"></div>
+        <div class="tax-field" id="acdField"><label>Additional customs duty (%)</label><input id="acd" type="number" min="0" step="0.01" value="0"></div>
+        <div class="tax-field" id="rdField"><label>Regulatory duty (%)</label><input id="rd" type="number" min="0" step="0.01" value="0"></div>
+        <div class="tax-field" id="stField"><label>Sales tax (%)</label><input id="st" type="number" min="0" step="0.01" value="0"></div>
+        <div class="tax-field" id="fedField"><label>Federal Excise Duty (%)</label><input id="fed" type="number" min="0" step="0.01" value="0"></div>
+        <div class="tax-field" id="whtField"><label>Withholding / advance income tax (%)</label><input id="wht" type="number" min="0" step="0.01" value="0"></div>
+        <div class="tax-field tax-full"><div class="tax-help">For the custom estimate, enter the applicable rates from the current FBR/PCT classification. Rates and tax bases can differ by vehicle, PCT code, origin, scheme and concession.</div></div>
+      </div>
+      <div class="tax-actions"><button class="btn btn-gold" type="button" onclick="calculateCarTax()">Calculate Car Tax</button><button class="btn btn-outline" type="button" onclick="resetCarTax()">Reset</button></div>
+      <div id="taxResult" class="tax-result" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+
 <section id="markets" class="alt">
 <div class="container">
-  <div class="section-head"><div class="kicker">Global Reach</div><h2>Markets we serve</h2><p class="lead">Built for cross-border trade, documentation and buyer communication.</p></div>
+  <div class="section-head"><div><div class="kicker">Our Global Markets</div><h2>Trade Across Key Regions</h2></div><div class="markets-hint">Select a region to view countries</div></div>
   <div class="markets">
     <div class="market" role="button" tabindex="0" aria-expanded="false">🌐<strong>Middle East</strong><span class="tap">Tap to view countries</span><div class="country-list">🇦🇪 United Arab Emirates<br>🇸🇦 Saudi Arabia<br>🇶🇦 Qatar<br>🇰🇼 Kuwait<br>🇴🇲 Oman<br>🇧🇭 Bahrain<br>🇯🇴 Jordan</div></div>
     <div class="market" role="button" tabindex="0" aria-expanded="false">🏛️<strong>Europe</strong><span class="tap">Tap to view countries</span><div class="country-list">🇬🇧 United Kingdom<br>🇩🇪 Germany<br>🇫🇷 France<br>🇮🇹 Italy<br>🇪🇸 Spain<br>🇳🇱 Netherlands<br>🇧🇪 Belgium</div></div>
@@ -309,8 +473,7 @@ footer a:hover{color:#fff}
 
   <div class="payment payment-banks">
     <div class="payment-box">
-      <div class="kicker">Bank 01</div>
-      <h3>Bank Alfalah Limited</h3>
+      <div class="bank-brand" style="display:flex;align-items:center;gap:14px;margin-bottom:14px"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Bank_Alfalah_logo.png" alt="Bank Alfalah logo" style="width:58px;height:58px;object-fit:contain"><div><div class="kicker" style="margin-bottom:3px">Bank 01</div><h3 style="margin:0">Bank Alfalah Limited</h3></div></div>
       <p><strong>Account Title:</strong> ALI ENTERPRISES</p>
       <p><strong>Account No:</strong> 02601008895049</p>
       <p><strong>IBAN:</strong> PK29ALFH026001008895049</p>
@@ -325,8 +488,7 @@ footer a:hover{color:#fff}
     </div>
 
     <div class="payment-box">
-      <div class="kicker">Bank 02</div>
-      <h3>Meezan Bank Limited</h3>
+      <div class="bank-brand" style="display:flex;align-items:center;gap:14px;margin-bottom:14px"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Meezan_Bank_logo.png" alt="Meezan Bank logo" style="width:58px;height:58px;object-fit:contain"><div><div class="kicker" style="margin-bottom:3px">Bank 02</div><h3 style="margin:0">Meezan Bank Limited</h3></div></div>
       <p><strong>Account Title:</strong> ALI ENTERPRISES</p>
       <p><strong>Account No:</strong> 04820109950346</p>
       <p><strong>IBAN:</strong> PK92MEZN0004820109950346</p>
@@ -407,6 +569,8 @@ footer a:hover{color:#fff}
 </main>
 
 <script>
+(function(){const root=document.getElementById('heroSlider');if(!root)return;const slides=[...root.querySelectorAll('.hero-slide')],dots=[...root.querySelectorAll('.hero-dot')],label=document.getElementById('heroLabel');let i=0,t;function go(n){i=(n+slides.length)%slides.length;slides.forEach((s,k)=>s.classList.toggle('active',k===i));dots.forEach((d,k)=>d.classList.toggle('active',k===i));label.textContent=slides[i].dataset.label;}function auto(){clearInterval(t);t=setInterval(()=>go(i+1),5000)}root.querySelector('.hero-prev').onclick=()=>{go(i-1);auto()};root.querySelector('.hero-next').onclick=()=>{go(i+1);auto()};dots.forEach((d,k)=>d.onclick=()=>{go(k);auto()});auto();})();
+
   document.querySelectorAll('.market').forEach(function(card){
     function toggle(){
       const isOpen=card.classList.toggle('open');
@@ -417,9 +581,156 @@ footer a:hover{color:#fff}
       if(e.key==='Enter' || e.key===' '){ e.preventDefault(); toggle(); }
     });
   });
+
+function moneyPKR(n){return 'PKR '+Math.round(n).toLocaleString('en-PK');}
+function num(id){return parseFloat(document.getElementById(id).value)||0;}
+function toggleTaxMode(){
+  const scheme=document.getElementById('taxType').value==='scheme';
+  ['ageField','schemeField'].forEach(id=>document.getElementById(id).classList.toggle('tax-hidden',!scheme));
+  ['cdField','acdField','rdField','stField','fedField','whtField'].forEach(id=>document.getElementById(id).classList.toggle('tax-hidden',scheme));
+  document.getElementById('valueField').querySelector('label').textContent=scheme?'Base duty amount is set by FBR (USD)':'Vehicle / assessable value (USD)';
+}
+function calculateCarTax(){
+  const scheme=document.getElementById('taxType').value==='scheme';
+  const cc=num('cc'), fx=num('fx'), fuel=document.getElementById('fuel').value;
+  let html='', total=0;
+  if(scheme){
+    const table=cc<=800?4800:cc<=1000?6000:cc<=1300?13200:cc<=1500?18590:cc<=1600?22550:cc<=1800?27940:0;
+    const age=Math.min(Math.max(num('age'),0),36);
+    if(!table){document.getElementById('taxResult').innerHTML='<h3>Unable to calculate</h3><p>Please enter an engine capacity up to 1800cc for the FBR Asian-make scheme.</p>';document.getElementById('taxResult').classList.add('show');return;}
+    if(document.getElementById('asian').value==='no'){document.getElementById('taxResult').innerHTML='<h3>Scheme not applicable</h3><p>The FBR table used here is specifically for old/used Asian makes under the Personal Baggage, Gift and Transfer of Residence schemes.</p>';document.getElementById('taxResult').classList.add('show');return;}
+    let usd=table*(1-age/100); let exemption=0;
+    if(fuel==='Hybrid Electric (HEV)') exemption=cc<=1800?0.50:(cc<=2500?0.25:0);
+    usd*=1-exemption; total=usd*fx;
+    html='<h3>Estimated FBR scheme duty & taxes</h3><div class="tax-lines">'+
+      '<div class="tax-line"><span>Base duty & taxes (FBR table)</span><b>US$ '+table.toLocaleString()+'</b></div>'+
+      '<div class="tax-line"><span>Age depreciation ('+age+'%)</span><b>− US$ '+(table*age/100).toLocaleString()+'</b></div>'+
+      (exemption?'<div class="tax-line"><span>HEV exemption ('+(exemption*100)+'%)</span><b>Applied</b></div>':'')+
+      '<div class="tax-line"><span>Estimated payable</span><b>US$ '+Math.round(usd).toLocaleString()+'</b></div>'+
+      '<div class="tax-line total"><span>Approx. PKR</span><b>'+moneyPKR(total)+'</b></div></div>'+
+      '<div class="tax-note">FBR states that used Asian makes imported under these three schemes have fixed duty/tax amounts by engine capacity, with 1% depreciation per month according to vehicle age. HEVs up to 1800cc have a 50% exemption; HEVs above 1800cc up to 2500cc have a 25% exemption. Eligibility and age limits also apply.</div>';
+  }else{
+    const av=num('usd')*fx, cd=av*num('cd')/100, acd=av*num('acd')/100, rd=av*num('rd')/100;
+    const taxBase=av+cd+acd+rd; const st=taxBase*num('st')/100; const fed=taxBase*num('fed')/100; const wht=taxBase*num('wht')/100;
+    total=cd+acd+rd+st+fed+wht;
+    html='<h3>Estimated import tax breakdown</h3><div class="tax-lines">'+
+      '<div class="tax-line"><span>Assessable value</span><b>'+moneyPKR(av)+'</b></div>'+
+      '<div class="tax-line"><span>Customs duty</span><b>'+moneyPKR(cd)+'</b></div>'+
+      '<div class="tax-line"><span>Additional customs duty</span><b>'+moneyPKR(acd)+'</b></div>'+
+      '<div class="tax-line"><span>Regulatory duty</span><b>'+moneyPKR(rd)+'</b></div>'+
+      '<div class="tax-line"><span>Sales tax</span><b>'+moneyPKR(st)+'</b></div>'+
+      '<div class="tax-line"><span>Federal Excise Duty</span><b>'+moneyPKR(fed)+'</b></div>'+
+      '<div class="tax-line"><span>Withholding / advance income tax</span><b>'+moneyPKR(wht)+'</b></div>'+
+      '<div class="tax-line total"><span>Total entered duties & taxes</span><b>'+moneyPKR(total)+'</b></div>'+ 
+      '<div class="tax-line"><span>Estimated landed value before other charges</span><b>'+moneyPKR(av+total)+'</b></div></div>'+ 
+      '<div class="tax-note">This is an estimate based on the rates and simplified tax bases you enter. Actual FBR assessment may use specific valuation/PCT rules and different tax bases. Port, freight, insurance, clearing, registration and other charges are not included.</div>';
+  }
+  html+='<div class="tax-official">For exact current rates and official assessment, check <a href="https://www.fbr.gov.pk/duty-calculator/51149/152538" target="_blank" rel="noopener">FBR Duty Calculator</a> and the <a href="https://www.fbr.gov.pk/categ/customs-tariff/51149/70853/131188" target="_blank" rel="noopener">2026–27 Customs Tariff</a>.</div>';
+  const box=document.getElementById('taxResult');box.innerHTML=html;box.classList.add('show');
+}
+function resetCarTax(){document.getElementById('taxType').value='custom';['usd','cc'].forEach(id=>document.getElementById(id).value='');document.getElementById('fx').value='280';['cd','acd','rd','st','fed','wht'].forEach(id=>document.getElementById(id).value='0');document.getElementById('age').value='0';document.getElementById('asian').value='yes';document.getElementById('fuel').value='Petrol / Diesel';document.getElementById('taxResult').classList.remove('show');toggleTaxMode();}
+toggleTaxMode();
+
+
+/* Ali Enterprises bilingual site assistant — answers from published site data */
+(function(){
+  const launcher=document.getElementById('aiChatLauncher'), panel=document.getElementById('aiChatPanel');
+  const close=document.getElementById('aiChatClose'), body=document.getElementById('aiChatBody');
+  const input=document.getElementById('aiChatInput'), send=document.getElementById('aiSend');
+  const welcome=document.getElementById('aiWelcome'), quick=document.getElementById('aiQuick');
+  let lang='en';
+
+  const KB=[
+    {keys:['company','about','who','ali enterprises','business'],en:"ALI ENTERPRISES is a Pakistan-based trading and global sourcing company established in October 2016. It connects international buyers with Pakistani suppliers and coordinates sourcing, commercial terms and logistics.",ur:"ALI ENTERPRISES Pakistan-based trading aur global sourcing company hai, October 2016 mein established hui. Ye international buyers ko Pakistani suppliers se connect karti hai aur sourcing, commercial terms aur logistics coordinate karti hai."},
+    {keys:['contact','phone','whatsapp','number','email'],en:"Phone / WhatsApp: +92 336 6666967\nEmail: Mianali057@gmail.com",ur:"Phone / WhatsApp: +92 336 6666967\nEmail: Mianali057@gmail.com"},
+    {keys:['office','address','karachi','faisalabad','lahore','port qasim'],en:"Head Office: Port Qasim, Karachi, Pakistan\nBranch: St # 3, Aminpur Bazar, Faisalabad, Pakistan\nOffice: Bahria Orchard, Lahore, Pakistan",ur:"Head Office: Port Qasim, Karachi, Pakistan\nBranch: St # 3, Aminpur Bazar, Faisalabad, Pakistan\nOffice: Bahria Orchard, Lahore, Pakistan"},
+    {keys:['product','products','textile','packaging','paper','industrial','consumer','sourcing'],en:"Product categories: Textiles, Packaging Materials, Paper & Board, Industrial Products, Consumer Goods and Custom Sourcing.",ur:"Products: Textiles, Packaging Materials, Paper & Board, Industrial Products, Consumer Goods aur Custom Sourcing."},
+    {keys:['market','markets','middle east','europe','asia','africa','north america','country'],en:"Markets shown on the site: Middle East, Europe, Asia, Africa and North America. Tap a region on the Markets section to view its country list.",ur:"Site par markets: Middle East, Europe, Asia, Africa aur North America. Markets section mein region par tap karke countries dekhi ja sakti hain."},
+    {keys:['incoterm','incoterms','fob','cif','cfr','exw'],en:"Available Incoterms: FOB, CIF, CFR and EXW.",ur:"Available Incoterms: FOB, CIF, CFR aur EXW hain."},
+    {keys:['fbr','ntn','tax registration'],en:"FBR: Federal Board of Revenue, Government of Pakistan. NTN: 7306837-7, RTO Faisalabad.",ur:"FBR: Federal Board of Revenue, Government of Pakistan. NTN: 7306837-7, RTO Faisalabad."},
+    {keys:['fcci','chamber','membership'],en:"FCCI: Faisalabad Chamber of Commerce & Industry. Membership: 2120020-16812, since December 2024.",ur:"FCCI: Faisalabad Chamber of Commerce & Industry. Membership: 2120020-16812, December 2024 se."},
+    {keys:['psw','pakistan single window','verified business'],en:"PSW: Pakistan Single Window. The site presents the business as FBR Registered and PSW Trained.",ur:"PSW: Pakistan Single Window. Site par business ko FBR Registered aur PSW Trained show kiya gaya hai."},
+    {keys:['verified trader','trade partner','10 years','10+ years','since 2016'],en:"The site highlights 10+ Years of trading/sourcing experience since 2016 and a Verified Trader positioning.",ur:"Site par 2016 se 10+ Years trading/sourcing experience aur Verified Trader positioning show ki gayi hai."},
+    {keys:['bank alfalah','alfalah','account 1','bank account'],en:"Bank Alfalah Limited — Account Title: ALI ENTERPRISES\nAccount No: 02601008895049\nIBAN: PK29ALFH026001008895049\nCurrent Account — Jinnah Colony Branch, Faisalabad\nBranch Code: 0260\nSWIFT/BIC: ALFHPKKAXXX",ur:"Bank Alfalah Limited — Account Title: ALI ENTERPRISES\nAccount No: 02601008895049\nIBAN: PK29ALFH026001008895049\nCurrent Account — Jinnah Colony Branch, Faisalabad\nBranch Code: 0260\nSWIFT/BIC: ALFHPKKAXXX"},
+    {keys:['meezan','account 2'],en:"Meezan Bank Limited — Account Title: ALI ENTERPRISES\nAccount No: 04820109950346\nIBAN: PK92MEZN0004820109950346\nCurrent Account — Bhawana Bazar Branch, Faisalabad.",ur:"Meezan Bank Limited — Account Title: ALI ENTERPRISES\nAccount No: 04820109950346\nIBAN: PK92MEZN0004820109950346\nCurrent Account — Bhawana Bazar Branch, Faisalabad."},
+    {keys:['payment','pay','qr','bank transfer'],en:"The Payment section provides the two official ALI ENTERPRISES business accounts and QR codes. Always verify the account title and details against the latest official quotation or proforma invoice.",ur:"Payment section mein ALI ENTERPRISES ke dono official business accounts aur QR codes diye gaye hain. Payment se pehle account title aur details latest quotation/proforma invoice se verify karein."},
+    {keys:['certificate','psw certificate','training'],en:"The site includes a PSW export-training certificate for ALI AHSAN: “Understanding Exports: A Comprehensive Guide to Pakistan’s Export Landscape”, dated September 24, 2026.",ur:"Site par ALI AHSAN ka PSW export-training certificate included hai: “Understanding Exports: A Comprehensive Guide to Pakistan’s Export Landscape”, dated 24 September 2026."},
+    {keys:['car tax','car duty','vehicle tax','calculator','import car'],en:"The site has a Car Import Duty & Tax Calculator. It provides an estimate based on entered value/rates and includes an FBR used-Asian-make scheme option. For exact assessment, use the official FBR Duty Calculator and applicable Customs Tariff.",ur:"Site mein Car Import Duty & Tax Calculator hai. Ye entered value/rates ke basis par estimate deta hai aur FBR used-Asian-make scheme option bhi hai. Exact assessment ke liye official FBR Duty Calculator aur applicable Customs Tariff check karein."},
+    {keys:['rfq','quote','quotation','enquiry'],en:"Use the RFQ / Request a Quote section to submit your name, company, email, country, product requirement, quantity, destination and preferred Incoterm.",ur:"RFQ / Request a Quote section mein name, company, email, country, product requirement, quantity, destination aur preferred Incoterm submit kar sakte hain."},
+    {keys:['safety','security','password','pin'],en:"Payment safety: verify the account title and bank details before payment. Never share passwords, PINs or card security codes.",ur:"Payment safety: payment se pehle account title aur bank details verify karein. Passwords, PINs ya card security codes kabhi share na karein."}
+  ];
+
+  const quickEN=[['Products','products'],['Markets','markets'],['Payment','payment'],['Contact','contact'],['Car Tax','car tax'],['RFQ','rfq']];
+  const quickUR=[['Products','products'],['Markets','markets'],['Payment','payment'],['Contact','contact'],['Car Tax','car tax'],['RFQ','rfq']];
+
+  function setLanguage(l){
+    lang=l;
+    document.querySelectorAll('.ai-lang').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
+    welcome.textContent=l==='en'
+      ?"Assalam-o-alaikum! I can answer questions using the information published on this website. Ask me about products, markets, offices, credentials, payments, RFQ or car tax."
+      :"Assalam-o-alaikum! Main is website ki published information se jawab de sakta hoon. Products, markets, offices, credentials, payment, RFQ ya car tax ke bare mein poochain.";
+    input.placeholder=l==='en'?"Ask about the website...":"Website ke bare mein poochain...";
+    quick.innerHTML='';
+    (l==='en'?quickEN:quickUR).forEach(([label,q])=>{
+      const b=document.createElement('button'); b.textContent=label; b.onclick=()=>ask(q); quick.appendChild(b);
+    });
+  }
+  function addMsg(text,who){const d=document.createElement('div');d.className='ai-msg '+who;d.textContent=text;body.insertBefore(d,quick);body.scrollTop=body.scrollHeight;}
+  function normalize(s){return s.toLowerCase().replace(/[^\w\s+.-]/g,' ');}
+  function answer(q){
+    const n=normalize(q);
+    let best=null,score=0;
+    KB.forEach(item=>{
+      let s=0;
+      item.keys.forEach(k=>{if(n.includes(normalize(k)))s+=k.length>4?3:2;});
+      if(s>score){score=s;best=item;}
+    });
+    if(best && score>=2) return lang==='en'?best.en:best.ur;
+    return lang==='en'
+      ?"I can answer from the site's published information. Try: products, markets, payment, Bank Alfalah, Meezan, FBR, FCCI, PSW, offices, RFQ, contact or car tax."
+      :"Main site ki published information se jawab deta hoon. Try karein: products, markets, payment, Bank Alfalah, Meezan, FBR, FCCI, PSW, offices, RFQ, contact ya car tax.";
+  }
+  function ask(q){
+    q=(q||'').trim(); if(!q)return;
+    addMsg(q,'user'); input.value='';
+    setTimeout(()=>addMsg(answer(q),'bot'),180);
+  }
+  launcher.onclick=()=>{panel.classList.toggle('open');panel.setAttribute('aria-hidden',panel.classList.contains('open')?'false':'true');if(panel.classList.contains('open'))input.focus();};
+  close.onclick=()=>panel.classList.remove('open');
+  document.querySelectorAll('.ai-lang').forEach(b=>b.onclick=()=>setLanguage(b.dataset.lang));
+  send.onclick=()=>ask(input.value);
+  input.addEventListener('keydown',e=>{if(e.key==='Enter')ask(input.value);});
+  setLanguage('en');
+})();
+
 </script>
 
 <a class="wa" href="https://wa.me/923366666967" target="_blank" rel="noopener">WhatsApp</a>
+
+
+<!-- AI Trade Assistant -->
+<button class="ai-chat-launcher" id="aiChatLauncher" aria-label="Open AI Trade Assistant">🤖<small>AI</small></button>
+<div class="ai-chat-panel" id="aiChatPanel" aria-hidden="true">
+  <div class="ai-chat-head">
+    <div class="ai-chat-title">
+      <div class="ai-bot-icon">AI</div>
+      <div><b>Ali Enterprises Assistant</b><span>Site information • Roman Urdu / English</span></div>
+    </div>
+    <div class="ai-chat-actions">
+      <button class="ai-lang active" data-lang="en">EN</button>
+      <button class="ai-lang" data-lang="ur">UR</button>
+      <button class="ai-close" id="aiChatClose">×</button>
+    </div>
+  </div>
+  <div class="ai-chat-body" id="aiChatBody">
+    <div class="ai-msg bot" id="aiWelcome"></div>
+    <div class="ai-quick" id="aiQuick"></div>
+  </div>
+  <div class="ai-chat-input">
+    <input id="aiChatInput" autocomplete="off" placeholder="Ask about products, markets, payment, tax..." />
+    <button class="ai-send" id="aiSend">➤</button>
+  </div>
+</div>
 
 <footer>
 <div class="container">
